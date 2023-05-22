@@ -29,7 +29,7 @@ const Navbar = () => {
 					background="black">
 					<NextLink href="/" passHref>
 						<Text cursor="pointer" color="displayColor" fontWeight="bold" fontSize="32px">
-							<Bracket>&#123;</Bracket> K <Bracket>&#125;</Bracket>
+							<Bracket>&#123;</Bracket> T <Bracket>&#125;</Bracket>
 						</Text>
 					</NextLink>
 					{!isLargerThan768 ? (
