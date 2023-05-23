@@ -3,6 +3,7 @@ import React from "react";
 import { Stack, Flex } from "@chakra-ui/react";
 import { ContentfulPagination, ProjectOverviewItem } from "../api/types";
 import Navbar from "../components/Navbar";
+import Header from "../components/Header";
 import About from "../components/About";
 import Head from "next/head";
 
@@ -26,6 +27,7 @@ const Home: NextPage<HomePageProps> = ({ data }) => {
           px={{ base: "5vw", md: "10vw" }}
           mt={{ base: "15vh", md: "22.5vh" }}
         >
+		<Header />
           <About />
         </Stack>
       </Flex>
