@@ -48,7 +48,7 @@ const Education = () => {
             </Box>
             <Box mt={4}>
               <Text fontStyle="italic" fontSize="lg" fontWeight="bold" mt={2}>
-                BAS, Computer and Information Science • 2021 — 2025
+                BSE, Computer and Information Science • 2021 — 2025
               </Text>
               <Text mt={2}>
                 <Text as="span" fontWeight="bold">
@@ -68,25 +68,50 @@ const Education = () => {
           </Box>
         </Stack>
         <Stack spacing={4}>
-          <Heading fontSize="2xl">Associations</Heading>
-
-          <Text
-            color="textSecondary"
-            fontSize={{ base: "14px", md: "18px" }}
-            whiteSpace="pre-line"
-          >
-            Hey there👋 I'm Taran Anantasagar, and I'm currently a student at
-            the University of Pennsylvania pursuing BSE and MSE degrees in
-            Computer Science, with minors in Mathematics and Statistics.
-            <br />
-            <br />
-            More placeholder
-            <br />
-            <br />
-            Placeholder
-            <br />
-            <br />
-          </Text>
+          <Heading fontSize="5xl">Associations</Heading>
+          <Box bg="brand.900" p={4} borderRadius="md" boxShadow="md">
+            <Box>
+              <Text fontSize="2xl" color="brand.100">
+                University of Pennsylvania
+              </Text>
+              <Box borderTop="1px" borderColor="gray.300" my={2} />
+              <Text fontStyle="italic" fontSize="lg" fontWeight="bold">
+                MSE, Computer Science • 2022 — 2025
+              </Text>
+              <Text mt={2}>
+                <Text as="span" fontWeight="bold">
+                  Notable Coursework:
+                </Text>{" "}
+                Machine Learning, Operating Systems Design, Machine Learning,
+                Database and Information Systems, Web3.0 Security
+              </Text>
+              <Text mt={2}>
+                <Text as="span" fontWeight="bold">
+                  GPA:
+                </Text>{" "}
+                4.00
+              </Text>
+            </Box>
+            <Box mt={4}>
+              <Text fontStyle="italic" fontSize="lg" fontWeight="bold" mt={2}>
+                BSE, Computer and Information Science • 2021 — 2025
+              </Text>
+              <Text mt={2}>
+                <Text as="span" fontWeight="bold">
+                  Notable Coursework:
+                </Text>{" "}
+                Data Structures and Algorithms, Scalable and Cloud Computing,
+                Engineering Probability, Linear Algebra, Stochastic Processes,
+                Discrete Mathematics
+              </Text>
+              <Text mt={2}>
+                <Text as="span" fontWeight="bold">
+                  GPA:
+                </Text>{" "}
+                4.00
+              </Text>
+            </Box>
+          </Box>
         </Stack>
       </SimpleGrid>
     </>

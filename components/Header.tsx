@@ -1,6 +1,8 @@
 import {
   Box,
   Button,
+  forwardRef,
+  Flex,
   Link,
   Image,
   Text,
@@ -12,11 +14,56 @@ import {
   Wrap,
   WrapItem,
 } from "@chakra-ui/react";
+import { motion, isValidMotionProp } from "framer-motion";
 import { FaEnvelope, FaGithub, FaLinkedin, FaFile } from "react-icons/fa";
-import React from "react";
+import { useState } from "react";
+
+export const MotionBox = motion(
+  forwardRef((props, ref) => {
+    const chakraProps = Object.fromEntries(
+      // do not pass framer props to DOM element
+      Object.entries(props).filter(([key]) => !isValidMotionProp(key))
+    );
+    return <Box ref={ref} {...chakraProps} />;
+  })
+);
+
+
+const MotionFlex = motion(
+  forwardRef((props, ref) => {
+    const chakraProps = Object.fromEntries(
+      // do not pass framer props to DOM element
+      Object.entries(props).filter(([key]) => !isValidMotionProp(key))
+    );
+    return <Flex ref={ref} {...chakraProps} />;
+  })
+);
+
+const emojis = [
+  "👋",
+  "✌️",
+  "🤙",
+  "🤘",
+  "🖖",
+  "👊",
+  "🙌",
+  "👍",
+  "🖐",
+  "👌",
+  "👏",
+  "🤞",
+  "🤟",
+  "🤝",
+  "🤜",
+  "🤛",
+  "🤚",
+  "☝️",
+];
 
 function Header() {
   const [isLargerThan800] = useMediaQuery("800");
+  const [showEmoji, setShowEmoji] = useState(false);
+  const [emojiCounter, setEmojiCounter] = useState(-1);
 
   return (
     <>
@@ -42,15 +89,75 @@ function Header() {
               zIndex={0}
               alt=""
             />
-            <Text
-              color="brand.500"
-              fontSize="display2"
-              fontWeight="medium"
+            <MotionFlex
               position="relative"
-              zIndex={1}
+              ml={["auto", "auto"]}
+              m={["auto", "initial"]}
+              w={["90%", "85%", "80%"]}
+              maxW="800px"
+              opacity="0"
+              justify="center"
+              direction="column"
+              initial={{
+                opacity: 0,
+                translateX: 150,
+              }}
+              animate={{
+                opacity: 1,
+                translateX: 0,
+                transition: {
+                  duration: 0.5,
+                },
+              }}
             >
-              Hey there 👋, I'm-
-            </Text>
+              <Box position="relative">
+                <Box
+                  position="absolute"
+                  width="full"
+                  fontSize="2xl"
+                  textAlign="center"
+                >
+                  {emojis.map((item, index) => {
+                    return (
+                      <MotionBox
+                        key={index}
+                        position="absolute"
+                        right="80%"
+                        animate={
+                          showEmoji && emojiCounter === index ? "show" : "hide"
+                        }
+                        variants={{
+                          hide: { translateY: -80, opacity: 0 },
+                          show: {
+                            translateY: [0, -40, -60],
+                            opacity: [0, 1, 0],
+                          },
+                        }}
+                        initial="hide"
+                      >
+                        {item}
+                      </MotionBox>
+                    );
+                  })}
+                </Box>
+                <MotionBox whileHover={{ translateY: -5 }} width="max-content">
+                  <Text
+                    color="brand.500"
+                    fontSize="display2"
+                    fontWeight="medium"
+                    position="relative"
+                    cursor="pointer"
+                    onClick={() => {
+                      setEmojiCounter((prevCounter) => (prevCounter + 1) % emojis.length);
+                      setShowEmoji(true);
+                    }}
+                    zIndex={1}
+                  >
+                    Hey there 👋, I'm-
+                  </Text>
+                </MotionBox>
+              </Box>
+            </MotionFlex>
           </Box>
 
           <Heading
