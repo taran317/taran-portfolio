@@ -19,7 +19,7 @@ import React from "react";
 const About = () => {
   return (
     <>
-      <SimpleGrid columns={{ base: 1, md: 2 }} spacing={8}>
+      <SimpleGrid columns={{ base: 1, md: 1.5 }} spacing={8}>
         <Stack spacing={4}>
           <Heading fontSize="2xl">About Me</Heading>
 
@@ -28,9 +28,12 @@ const About = () => {
             fontSize={{ base: "14px", md: "18px" }}
             whiteSpace="pre-line"
           >
-            Placeholder text for now
+            Hey there👋 I'm Taran Anantasagar, and I'm currently a student at the University of
+            Pennsylvania pursuing BSE and MSE degrees in Computer Science, with minors in Mathematics
+            and Statistics.
             <br />
-            <br />More placeholder
+            <br />
+            More placeholder
             <br />
             <br />
             Placeholder

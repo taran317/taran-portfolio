@@ -14,6 +14,7 @@ import {
 } from "@chakra-ui/react";
 import { FaEnvelope, FaGithub, FaLinkedin, FaFile } from "react-icons/fa";
 import React from "react";
+import ToggleColorMode from "./ToggleColorMode";
 
 function Header() {
   const [isLargerThan800] = useMediaQuery("800");
@@ -104,7 +105,8 @@ function Header() {
             🏀 Following favorite teams and players across sports leagues +
             engaging in fiery debates with friends
             <br />
-            🧑‍💻 Actively seeking SWE and Quant Trading internships for Summer 2024
+            🧑‍💻 Actively seeking SWE and Quant Trading internships for Summer
+            2024
           </Text>
         </SlideFade>
 
@@ -144,6 +146,7 @@ function Header() {
             </WrapItem>
           </Wrap>
         </SlideFade>
+        <ToggleColorMode />
       </Stack>
     </>
   );

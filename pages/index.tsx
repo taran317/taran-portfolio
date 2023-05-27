@@ -28,7 +28,7 @@ const Home: NextPage<HomePageProps> = ({ data }) => {
           mt={{ base: "15vh", md: "22.5vh" }}
         >
 		<Header />
-          <About />
+		<About />
         </Stack>
       </Flex>
     </>
