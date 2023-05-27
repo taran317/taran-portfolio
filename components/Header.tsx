@@ -78,8 +78,34 @@ function Header() {
             letterSpacing="-1.6px"
             maxWidth={{ base: "100%", md: "800px" }}
           >
-            Placeholder{" "}
+            {" "}
           </Heading>
+        </SlideFade>
+
+        <SlideFade
+          dir="top"
+          in
+          transition={{ enter: { duration: 0.4, delay: 0.9 } }}
+        >
+          <Text fontSize="display3" color="textSecondary">
+            📘 Studying{" "}
+            <Text as="span" color="brand.500">
+              Computer Science
+            </Text>{" "}
+            at the{" "}
+            <Text as="span" color="brand.500">
+              University of Pennsylvania
+            </Text>
+            <Text as="span" color="textSecondary">
+              {" "}
+              & graduating in May 2025
+            </Text>
+            <br />
+            🏀 Following favorite teams and players across sports leagues +
+            engaging in fiery debates with friends
+            <br />
+            🧑‍💻 Actively seeking SWE and Quant Trading internships for Summer 2024
+          </Text>
         </SlideFade>
 
         <SlideFade
