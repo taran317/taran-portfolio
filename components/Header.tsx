@@ -14,7 +14,6 @@ import {
 } from "@chakra-ui/react";
 import { FaEnvelope, FaGithub, FaLinkedin, FaFile } from "react-icons/fa";
 import React from "react";
-import ToggleColorMode from "./ToggleColorMode";
 
 function Header() {
   const [isLargerThan800] = useMediaQuery("800");
@@ -146,7 +145,6 @@ function Header() {
             </WrapItem>
           </Wrap>
         </SlideFade>
-        <ToggleColorMode />
       </Stack>
     </>
   );
