@@ -28,7 +28,6 @@ export const MotionBox = motion(
   })
 );
 
-
 const MotionFlex = motion(
   forwardRef((props, ref) => {
     const chakraProps = Object.fromEntries(
@@ -48,6 +47,7 @@ const emojis = [
   "👊",
   "🙌",
   "👍",
+  "🤛",
   "🖐",
   "👌",
   "👏",
@@ -55,7 +55,6 @@ const emojis = [
   "🤟",
   "🤝",
   "🤜",
-  "🤛",
   "🤚",
   "☝️",
 ];
@@ -148,7 +147,9 @@ function Header() {
                     position="relative"
                     cursor="pointer"
                     onClick={() => {
-                      setEmojiCounter((prevCounter) => (prevCounter + 1) % emojis.length);
+                      setEmojiCounter(
+                        (prevCounter) => (prevCounter + 1) % emojis.length
+                      );
                       setShowEmoji(true);
                     }}
                     zIndex={1}

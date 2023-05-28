@@ -24,7 +24,7 @@ const About = () => {
           <Heading fontSize="5xl">About Me</Heading>
           <Box bg="brand.900" p={4} borderRadius="md" boxShadow="md">
             <Text
-              fontSize={{ base: "14px", md: "18px" }}
+              fontSize={{ base: "18px", md: "22px" }}
               whiteSpace="pre-line"
             >
               Hey there👋 I'm Taran Anantasagar, and I'm currently a student at
@@ -32,7 +32,7 @@ const About = () => {
               Computer Science, with minors in Mathematics and Statistics.
               <br />
               <br />
-              More placeholder
+              
               <br />
               <br />
               Placeholder
