@@ -2,11 +2,12 @@ import type { NextPage } from "next";
 import React from "react";
 import { Stack, Flex, Spacer, Box } from "@chakra-ui/react";
 import { ContentfulPagination, ProjectOverviewItem } from "../api/types";
+import Head from "next/head";
 import Navbar from "../components/Navbar";
 import Header from "../components/Header";
 import About from "../components/About";
-import Head from "next/head";
 import Education from "../components/Education";
+import Credit from "../components/Credit";
 
 type HomePageProps = {
 	data: ContentfulPagination<ProjectOverviewItem>;
@@ -34,6 +35,7 @@ const Home: NextPage<HomePageProps> = () => (
 				<Education />
 			</Stack>
 		</Flex>
+		<Credit />
 	</>
 );
 
