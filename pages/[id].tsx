@@ -2,9 +2,11 @@ import fs from "fs";
 import path from "path";
 import Markdown from "markdown-to-jsx";
 import { GetStaticPaths, GetStaticProps } from "next";
-import { Stack } from "@chakra-ui/react";
+import { Box, Stack } from "@chakra-ui/react";
 import PostStyle from "../styles/PostStyle";
 import MarkdownOptions from "../components/MarkdownOptions";
+import Credit from "../components/Credit";
+import Navbar from "../components/Navbar";
 
 interface ProjectPostProps {
   content: string;
@@ -18,13 +20,21 @@ const getProjectPost = (id: string): string => {
 
 const ProjectPost: React.FC<ProjectPostProps> = ({ content }) => {
   return (
-    <Stack my="15vh" justifyContent="center" alignItems="center">
-        <Stack w={["100vw", "95vw"]} maxW="800px" p={["20px", "20px", "24px", "24px"]}>
-            <PostStyle>
-                <Markdown options={MarkdownOptions}>{content}</Markdown>
-            </PostStyle>
+    <>
+      <Navbar />
+      <Stack my="15vh" mb="-10vh" justifyContent="center" alignItems="center">
+        <Stack
+          w={["100vw", "95vw"]}
+          maxW="800px"
+          p={["20px", "20px", "24px", "24px"]}
+        >
+          <PostStyle>
+            <Markdown options={MarkdownOptions}>{content}</Markdown>
+          </PostStyle>
         </Stack>
-    </Stack>
+      </Stack>
+      <Credit />
+    </>
   );
 };
 
