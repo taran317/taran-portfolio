@@ -32,7 +32,7 @@ const Education = () => {
               <Box height="10px" />
               <Text
                 fontStyle="italic"
-                fontSize="2xl"
+                fontSize="xl"
                 color="white"
               >
                 MSE, Computer Science [GPA: 4.00] • 2022 — 2025
@@ -49,7 +49,7 @@ const Education = () => {
             <Box mt={4}>
               <Text
                 fontStyle="italic"
-                fontSize="2xl"
+                fontSize="xl"
                 color="white"
               >
                 BSE, Computer Science [GPA: 4.00] • 2021 — 2025

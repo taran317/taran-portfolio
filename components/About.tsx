@@ -56,7 +56,11 @@ const About = () => {
 
                 <ListItem>
                   {"  "} Developing the{" "}
-                  <Link href="https://pennlabs.org" color="#5CA4FF" isExternal>
+                  <Link
+                    href="https://pennlabs.org/products/penn-mobile"
+                    color="#5CA4FF"
+                    isExternal
+                  >
                     Penn Mobile
                   </Link>{" "}
                   🚀 application, which is used by over 10,000 students at Penn
