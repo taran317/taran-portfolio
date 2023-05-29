@@ -26,7 +26,7 @@ const Education = () => {
             padding="30px"
           >
             <Box>
-              <Text fontWeight="bold" fontSize="3xl" color="white">
+              <Text fontWeight="bold" fontSize="2xl" color="white">
                 University of Pennsylvania 🏫
               </Text>
               <Box height="10px" />
@@ -38,7 +38,7 @@ const Education = () => {
                 MSE, Computer Science [GPA: 4.00] • 2022 — 2025
               </Text>
               <Text
-                fontSize={{ base: "18px", md: "22px" }}
+                fontSize={{ base: "14px", md: "18px" }}
                 color="white"
                 mt={2}
               >
@@ -55,7 +55,7 @@ const Education = () => {
                 BSE, Computer Science [GPA: 4.00] • 2021 — 2025
               </Text>
               <Text
-                fontSize={{ base: "18px", md: "22px" }}
+                fontSize={{ base: "14px", md: "18px" }}
                 color="white"
                 mt={2}
               >

@@ -30,7 +30,7 @@ const About = () => {
             boxShadow="md"
             padding="30px"
           >
-            <Text fontSize={{ base: "18px", md: "22px" }} whiteSpace="pre-line">
+            <Text fontSize={{ base: "14px", md: "18px" }} whiteSpace="pre-line">
               Hey there👋 I'm Taran Anantasagar, and I'm currently a student at
               the University of Pennsylvania pursuing BSE and MSE degrees in
               Computer Science, with minors in Mathematics and Statistics. I'm

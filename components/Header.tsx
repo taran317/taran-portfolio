@@ -186,7 +186,11 @@ function Header() {
             letterSpacing="-1.6px"
             maxWidth={{ base: "100%", md: "800px" }}
           >
-            {" "}
+            Let's build something extraordinary together.
+            But first, a bit about me
+            <Box color="displayColor" as="span">
+              ...welcome to my portfolio!
+            </Box>{" "}
           </Heading>
         </SlideFade>
 
