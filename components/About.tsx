@@ -40,7 +40,44 @@ const About = () => {
               <br />
               <br />
               Outside of class, you can find me:
-              
+              <List spacing={1} mt={2} ml={10} styleType="disc">
+                {/* Hack4Impact */}
+                <ListItem>
+                  {"  "} Building software for social good with{" "}
+                  <Link
+                    href="https://hack4impact.org"
+                    color="#5CA4FF"
+                    isExternal
+                  >
+                    Hack4Impact
+                  </Link>{" "}
+                  🌟 (see some of my projects below!) as a developer lead
+                </ListItem>
+
+                <ListItem>
+                  {"  "} Developing the{" "}
+                  <Link
+                    href="https://pennlabs.org/products/penn-mobile"
+                    color="#5CA4FF"
+                    isExternal
+                  >
+                    Penn Mobile
+                  </Link>{" "}
+                  🚀 application, which is used by over 10,000 students at Penn
+                </ListItem>
+                {/* CIS 1210 Teaching Assistant */}
+                <ListItem>
+                  {"  "} Teaching data structures and algorithms as a{" "}
+                  <Link
+                    href="https://www.cis.upenn.edu/~cis1210/current/index.html"
+                    color="#5CA4FF"
+                    isExternal
+                  >
+                    CIS 1210
+                  </Link>{" "}
+                  TA 🧑‍🏫
+                </ListItem>
+              </List>
             </Text>
           </Box>
         </Stack>

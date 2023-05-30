@@ -7,32 +7,32 @@ type GlobalStyleProps = {
 
 const GlobalStyle: React.FC<GlobalStyleProps> = ({ children }) => {
 	return (
-    <>
-      <Global
-        styles={css`
-          ::selection {
-            background-color: #b794f4;
-            color: #fefefe;
-          }
-          ::-moz-selection {
-            background: #b794f4;
-            color: #fefefe;
-          }
-          html {
-            min-width: 356px;
-            min-height: 100vh;
-          }
-          #__next {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            background: #000;
-          }
-        `}
-      />
-      {children}
-    </>
-  );
+		<>
+			<Global
+				styles={css`
+					::selection {
+						background-color: #b794f4;
+						color: #fefefe;
+					}
+					::-moz-selection {
+						background: #b794f4;
+						color: #fefefe;
+					}
+					html {
+						min-width: 356px;
+						min-height: 100vh;
+					}
+					#__next {
+						display: flex;
+						flex-direction: column;
+						min-height: 100vh;
+						background: #000;
+					}
+				`}
+			/>
+			{children}
+		</>
+	);
 };
 
 export default GlobalStyle;
