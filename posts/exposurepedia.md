@@ -13,6 +13,8 @@ This is a simple boilerplate designed to serve as robust template for quickly st
 - [Husky](https://typicode.github.io/husky/#/) and [lint-staged](https://github.com/okonet/lint-staged) for checking linting on commits
 - [GitHub Actions](https://docs.github.com/en/actions) for ensuring linting + tests pass on pushes
 
+![Image Description](https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png)
+
 ## Required tools
 
 These are necessary to build and run the project at full functionality

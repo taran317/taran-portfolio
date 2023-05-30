@@ -221,13 +221,13 @@ function Header() {
           </Text>
         </SlideFade>
 
-        <SlideFade
+        {/* <SlideFade
           dir="top"
           in
           transition={{ enter: { duration: 0.4, delay: 1.0 } }}
         >
           <Wrap spacing={4} shouldWrapChildren width="100%">
-            <WrapItem>
+            <Box>
               <Link
                 href={"https://www.linkedin.com/in/taran-anantasagar/"}
                 isExternal
@@ -241,10 +241,10 @@ function Header() {
                   LinkedIn
                 </Button>
               </Link>
-            </WrapItem>
-            <WrapItem>
+            </Box>
+            <Box>
               <Link href={`mailto:tars@seas.upenn.edu`} isExternal>
-                <Button
+                {/* <Button
                   leftIcon={<Icon as={FaEnvelope} color="brand.300" />}
                   transition="0.3s"
                   position="static"
@@ -252,11 +252,11 @@ function Header() {
                   color="white"
                 >
                   Email
-                </Button>
+                </Button> 
               </Link>
-            </WrapItem>
+            </Box>
           </Wrap>
-        </SlideFade>
+        </SlideFade> */}
       </Stack>
     </>
   );
