@@ -41,7 +41,6 @@ const About = () => {
               <br />
               Outside of class, you can find me:
               <List spacing={1} mt={2} ml={10} styleType="disc">
-                {/* Hack4Impact */}
                 <ListItem>
                   {"  "} Building software for social good with{" "}
                   <Link
@@ -106,7 +105,7 @@ const About = () => {
                 alt=""
               />
               <Image
-                src="https://media.licdn.com/dms/image/D4E03AQEXyfRD89xH9g/profile-displayphoto-shrink_800_800/0/1686103834116?e=1691625600&v=beta&t=k-6HWJlJl0bU08vGdRxVjSaaOeAtEyWVjguUAA2w5T4"
+                src="https://i.ibb.co/qdk0kqM/linkd.jpg"
                 position="relative"
                 zIndex={2}
                 fallbackSrc="https://via.placeholder.com/150"

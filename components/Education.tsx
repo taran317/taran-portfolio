@@ -10,6 +10,7 @@ import {
 } from "@chakra-ui/react";
 import { ArrowRightIcon } from "@chakra-ui/icons";
 import React from "react";
+import ProjectLink from "./ProjectLink";
 
 const Education = () => {
   return (
@@ -70,34 +71,38 @@ const Education = () => {
           >
             <Box>
               <Text fontWeight="bold" fontSize="2xl" color="white">
-                University of Pennsylvania 🏫
+                SWE Intern @ Mathworks (MATLAB) 🎲
               </Text>
               <Box height="10px" />
-              <Text fontStyle="italic" fontSize="xl" color="white">
-                MSE, Computer Science [GPA: 4.00] • 2022 — 2025
-              </Text>
               <Text
                 fontSize={{ base: "14px", md: "18px" }}
                 color="white"
                 mt={2}
               >
-                Notable Coursework: Machine Learning, Operating Systems Design,
-                Database and Information Systems, Web3.0 Security
+                Simulink Assessments Team
+                <ProjectLink id={"mathworks"}>
+                  <Text fontSize={{ base: "md", md: "lg" }} color="#5CA4FF">
+                    Find out more! &rarr;
+                  </Text>
+                </ProjectLink>
               </Text>
             </Box>
             <Box mt={4}>
-              <Text fontStyle="italic" fontSize="xl" color="white">
-                Ripple, Software Engineering Intern • Apr 2022 — Aug 2022
+              <Text fontWeight="bold" fontSize="2xl" color="white">
+                SWE Intern @ Ripple Interactive 💥
               </Text>
               <Text
                 fontSize={{ base: "14px", md: "18px" }}
                 color="white"
                 mt={2}
               >
-                Notable Coursework: Data Structures and Algorithms, Scalable and
-                Cloud Computing, Engineering Probability, Linear Algebra,
-                Discrete Mathematics
+                Building app
               </Text>
+              <ProjectLink id={"ripple"}>
+                <Text fontSize={{ base: "md", md: "lg" }} color="#5CA4FF">
+                  Find out more! &rarr;
+                </Text>
+              </ProjectLink>
             </Box>
           </Box>
         </Stack>
