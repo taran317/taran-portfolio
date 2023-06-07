@@ -1,9 +1,10 @@
-import fs from "fs";
+import * as fs from "fs";
 import path from "path";
-import ProjectProps from "../types/ProjectProps"
+import ProjectProps from "../types/ProjectProps";
 
 const projectInfo: { [key: string]: ProjectProps } = {
   exposurepedia: {
+    id: "exposurepedia",
     title: "Exposurepedia",
     date: "2021-01-01",
     description:
@@ -19,10 +20,6 @@ const projectInfo: { [key: string]: ProjectProps } = {
       "AWS",
     ],
     github: "https://github.com/hack4impact-upenn/exposurepedia",
-    content: fs.readFileSync(
-      path.join(process.cwd(), "posts", "exposurepedia.md"),
-      "utf8"
-    ),
   },
 };
 

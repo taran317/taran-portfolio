@@ -10,8 +10,8 @@ type ProjectProps = {
   title: string;
   tags: string[];
   imageUrl: string;
-  shortDescription: string;
-  created: Date;
+  description: string;
+  date: string;
 };
 
 const Project: React.FC<ProjectProps> = ({
@@ -19,10 +19,9 @@ const Project: React.FC<ProjectProps> = ({
   title,
   tags,
   imageUrl,
-  shortDescription,
-  created,
+  description,
+  date,
 }) => {
-
   return (
     <>
       <Box
@@ -77,7 +76,7 @@ const Project: React.FC<ProjectProps> = ({
             <Heading marginTop="2">{title}</Heading>
           </ProjectLink>
           <Text fontSize="md" color="gray.400">
-            {dateFormat(created, "mmmm d, yyyy")}
+            {dateFormat(date, "mmmm d, yyyy")}
           </Text>
 
           <Text
@@ -87,7 +86,7 @@ const Project: React.FC<ProjectProps> = ({
             color="gray.200"
             fontSize="md"
           >
-            {shortDescription}
+            {description}
           </Text>
         </Box>
       </Box>

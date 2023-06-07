@@ -7,6 +7,8 @@ import Header from "../components/Header";
 import About from "../components/About";
 import Education from "../components/Education";
 import Credit from "../components/Credit";
+import ProjectsDisplay from "../components/ProjectsDisplay";
+import projectInfo from "../posts/projectInfo"
 
 const Home: NextPage = () => (
 	<>
@@ -27,6 +29,7 @@ const Home: NextPage = () => (
 				<Box height="50px" />
 				<About />
 				<Education />
+				<ProjectsDisplay projects={Object.values(projectInfo)} />
 			</Stack>
 		</Flex>
 		<Credit />

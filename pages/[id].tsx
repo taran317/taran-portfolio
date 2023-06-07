@@ -12,16 +12,36 @@ import ProjectProps from "../types/ProjectProps";
 import projectInfo from "../posts/projectInfo";
 import ChakraImage from "../components/ChakraImage";
 import readingTime from "reading-time";
+import { useEffect, useState } from "react";
+
+const fetchContent = async (id: string) => {
+    const response = await fetch(
+      `https://raw.githubusercontent.com/taran317/posts/main/${id}.md`
+    );
+    if (response.ok) {
+      const text = await response.text();
+      return text;
+    } else {
+      console.error("Failed to fetch content");
+      return '';
+    }
+}
 
 const ProjectPost: React.FC<ProjectProps> = ({
+  id,
   title,
   date,
-  description,
   imageUrl,
-  tags,
   github,
-  content,
 }) => {
+  const [content, setContent] = useState<string>('');
+
+  useEffect(() => {
+    fetchContent(id).then((text) => {
+      setContent(text);
+    });
+  }, [id]);
+  
   return (
     <>
       <Navbar />

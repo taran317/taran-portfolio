@@ -1,17 +1,14 @@
 import { Link, Stack, Heading, Text, SimpleGrid } from "@chakra-ui/react";
 import NextLink from "next/link";
 import React from "react";
+import ProjectProps from "../types/ProjectProps";
 import Project from "./Project";
 
-type MyProjectsProps = {
-  projects: ContentfulPagination<ProjectOverviewItem>;
-};
+interface ProjectsDisplayProps {
+    projects: ProjectProps[];
+}
 
-const MyProjects: React.FC<MyProjectsProps> = ({ projects }) => {
-  const handleClick = (event: string) => {
-    // Log analytics
-  };
-
+const ProjectsDisplay: React.FC<ProjectsDisplayProps> = ({ projects }) => {
   return (
     <>
       <Stack spacing={8} w="full">
@@ -25,9 +22,7 @@ const MyProjects: React.FC<MyProjectsProps> = ({ projects }) => {
                 All Creative Works.
               </Heading>
               <NextLink href="/projects" passHref>
-                <Link
-                  onClick={() => handleClick("featuredprojects_explore more")}
-                >
+                <Link>
                   <Text
                     display={{ base: "block", md: "none" }}
                     fontSize={{ base: "sm", md: "xl" }}
@@ -44,9 +39,7 @@ const MyProjects: React.FC<MyProjectsProps> = ({ projects }) => {
               Here's some of my projects that I have worked on.
             </Text>
             <NextLink href="/projects">
-              <Link
-                onClick={() => handleClick("featuredprojects_explore more")}
-              >
+              <Link>
                 <Text
                   display={{ base: "none", md: "block" }}
                   fontSize={{ base: "md", md: "xl" }}
@@ -57,20 +50,22 @@ const MyProjects: React.FC<MyProjectsProps> = ({ projects }) => {
             </NextLink>
           </Stack>
 
-          {projects.items?.map((project, index) => {
+          {projects?.map((project, index) => {
             return (
-              <ProjectCard
-                key={project.sys.id}
-                {...project.fields}
-                id={project.sys.id}
-                index={index}
+              <Project
+                id={project.id}
+                title={project.title}
+                tags={project.tags}
+                imageUrl={project.imageUrl}
+                description={project.description}
+                date={project.date}
               />
             );
           })}
         </SimpleGrid>
 
         <NextLink href="/projects">
-          <Link onClick={() => handleClick("featuredprojects_explore more")}>
+          <Link>
             <Text textAlign="center" fontSize="2xl">
               Explore more &rarr;
             </Text>
@@ -81,4 +76,4 @@ const MyProjects: React.FC<MyProjectsProps> = ({ projects }) => {
   );
 };
 
-export default MyProjects;
+export default ProjectsDisplay;
