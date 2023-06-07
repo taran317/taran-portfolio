@@ -10,7 +10,7 @@ type ProjectLinkProps = {
 
 const ProjectLink: React.FC<ProjectLinkProps> = ({ id, children }) => {
 	return (
-		<NextLink href={`/projects/${id}`} passHref>
+		<NextLink href={`/${id}`} passHref>
             <Link>{children}</Link>
         </NextLink>
 	);

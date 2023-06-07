@@ -12,47 +12,13 @@ const ProjectsDisplay: React.FC<ProjectsDisplayProps> = ({ projects }) => {
   return (
     <>
       <Stack spacing={8} w="full">
+        <Heading fontSize="5xl">Projects</Heading>
         <SimpleGrid columns={{ sm: 1, md: 2 }} spacing={16}>
-          <Stack spacing={1}>
-            <Stack isInline alignItems="center" justifyContent="space-between">
-              <Heading
-                fontSize={{ base: "xl", md: "2xl" }}
-                color="displayColor"
-              >
-                All Creative Works.
-              </Heading>
-              <NextLink href="/projects" passHref>
-                <Link>
-                  <Text
-                    display={{ base: "block", md: "none" }}
-                    fontSize={{ base: "sm", md: "xl" }}
-                    color="button1"
-                    _hover={{ color: "button2" }}
-                  >
-                    {" "}
-                    Explore more &rarr;
-                  </Text>
-                </Link>
-              </NextLink>
-            </Stack>
-            <Text fontSize={{ base: "md", md: "xl" }} color="textSecondary">
-              Here's some of my projects that I have worked on.
-            </Text>
-            <NextLink href="/projects">
-              <Link>
-                <Text
-                  display={{ base: "none", md: "block" }}
-                  fontSize={{ base: "md", md: "xl" }}
-                >
-                  Explore more &rarr;
-                </Text>
-              </Link>
-            </NextLink>
-          </Stack>
-
           {projects?.map((project, index) => {
             return (
               <Project
+                key={index}
+                index={index}
                 id={project.id}
                 title={project.title}
                 tags={project.tags}

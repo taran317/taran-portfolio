@@ -40,48 +40,42 @@ const About = () => {
               <br />
               <br />
               Outside of class, you can find me:
-              <List spacing={1} mt={2} ml={10} styleType="disc">
-                <ListItem>
-                  {"  "} Building software for social good with{" "}
-                  <Link
-                    href="https://hack4impact.org"
-                    color="#5CA4FF"
-                    isExternal
-                  >
-                    Hack4Impact
-                  </Link>{" "}
-                  🌟 (see some of my projects below!) as a developer lead
-                </ListItem>
-
-                <ListItem>
-                  {"  "} Developing the{" "}
-                  <Link
-                    href="https://pennlabs.org/products/penn-mobile"
-                    color="#5CA4FF"
-                    isExternal
-                  >
-                    Penn Mobile
-                  </Link>{" "}
-                  🚀 application, which is used by over 10,000 students at Penn
-                </ListItem>
-                {/* CIS 1210 Teaching Assistant */}
-                <ListItem>
-                  {"  "} Teaching data structures and algorithms as a{" "}
-                  <Link
-                    href="https://www.cis.upenn.edu/~cis1210/current/index.html"
-                    color="#5CA4FF"
-                    isExternal
-                  >
-                    CIS 1210
-                  </Link>{" "}
-                  TA 🧑‍🏫
-                </ListItem>
-              </List>
             </Text>
+            <List spacing={1} mt={2} ml={10} styleType="disc">
+              <ListItem>
+                {"  "} Building software for social good with{" "}
+                <Link href="https://hack4impact.org" color="#5CA4FF" isExternal>
+                  Hack4Impact
+                </Link>{" "}
+                🌟 (see some of my projects below!) as a developer lead
+              </ListItem>
+
+              <ListItem>
+                {"  "} Developing the{" "}
+                <Link
+                  href="https://pennlabs.org/products/penn-mobile"
+                  color="#5CA4FF"
+                  isExternal
+                >
+                  Penn Mobile
+                </Link>{" "}
+                🚀 application, which is used by over 10,000 students at Penn
+              </ListItem>
+              <ListItem>
+                {"  "} Teaching data structures and algorithms as a{" "}
+                <Link
+                  href="https://www.cis.upenn.edu/~cis1210/current/index.html"
+                  color="#5CA4FF"
+                  isExternal
+                >
+                  CIS 1210
+                </Link>{" "}
+                TA 🧑‍🏫
+              </ListItem>
+            </List>
           </Box>
         </Stack>
         <Stack align="center" spacing={4}>
-          {/* <Heading fontSize="5xl" color="black" >.</Heading> */}
           <Box height="64px" />
           <Flex
             alignItems="center"
@@ -90,8 +84,8 @@ const About = () => {
             position="relative"
           >
             <Box
-              maxW={{ base: "350px", lg: "400px" }}
-              maxH={{ base: "350px", lg: "400px" }}
+              maxW={{ base: "300px", lg: "350px" }}
+              maxH={{ base: "300px", lg: "350px" }}
               position="relative"
             >
               <Image
@@ -109,8 +103,8 @@ const About = () => {
                 position="relative"
                 zIndex={2}
                 fallbackSrc="https://via.placeholder.com/150"
-                w={{ base: "350px", lg: "400px" }}
-                h={{ base: "350px", lg: "400px" }}
+                w={{ base: "300px", lg: "350px" }}
+                h={{ base: "300px", lg: "350px" }}
                 borderRadius="50px"
                 alt="Taran Anantasagar"
               />

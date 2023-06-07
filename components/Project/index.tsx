@@ -1,4 +1,4 @@
-import { Text, Box, Heading } from "@chakra-ui/react";
+import { Text, Box, Heading, Image } from "@chakra-ui/react";
 import React from "react";
 import dateFormat from "dateformat";
 import ChakraNextImage from "../ChakraImage";
@@ -6,6 +6,7 @@ import ProjectLink from "./ProjectLink";
 import Tags from "./Tags";
 
 type ProjectProps = {
+  index: number;
   id: string;
   title: string;
   tags: string[];
@@ -15,6 +16,7 @@ type ProjectProps = {
 };
 
 const Project: React.FC<ProjectProps> = ({
+  index,
   id,
   title,
   tags,
@@ -30,9 +32,35 @@ const Project: React.FC<ProjectProps> = ({
         display="flex"
         flexDirection={{
           base: "column",
+          md: index % 2 === 0 ? "row" : "row-reverse",
         }}
         justifyContent="space-between"
       >
+        <Box
+          display="flex"
+          flex="1"
+          flexDirection="column"
+          justifyContent="center"
+          marginTop={{ base: "3", md: "0" }}
+        >
+          <Tags tags={tags} />
+          <ProjectLink id={id}>
+            <Heading marginTop="2">{title}</Heading>
+          </ProjectLink>
+          <Text fontSize="md" color="gray.400">
+            {dateFormat(date, "mmmm d, yyyy")}
+          </Text>
+
+          <Text
+            as="p"
+            marginTop="2"
+            marginBottom="2"
+            color="gray.200"
+            fontSize="md"
+          >
+            {description}
+          </Text>
+        </Box>
         <Box
           display="flex"
           flex="1"
@@ -63,31 +91,6 @@ const Project: React.FC<ProjectProps> = ({
               height="100%"
             />
           </Box>
-        </Box>
-        <Box
-          display="flex"
-          flex="1"
-          flexDirection="column"
-          justifyContent="center"
-          marginTop={{ base: "3", md: "0" }}
-        >
-          <Tags tags={tags} />
-          <ProjectLink id={id}>
-            <Heading marginTop="2">{title}</Heading>
-          </ProjectLink>
-          <Text fontSize="md" color="gray.400">
-            {dateFormat(date, "mmmm d, yyyy")}
-          </Text>
-
-          <Text
-            as="p"
-            marginTop="2"
-            marginBottom="2"
-            color="gray.200"
-            fontSize="md"
-          >
-            {description}
-          </Text>
         </Box>
       </Box>
     </>

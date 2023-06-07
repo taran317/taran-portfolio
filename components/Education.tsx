@@ -76,12 +76,12 @@ const Education = () => {
                 mt={2}
               >
                 Simulink Assessments Team
-                <ProjectLink id={"mathworks"}>
-                  <Text fontSize={{ base: "md", md: "lg" }} color="#5CA4FF">
-                    Find out more! &rarr;
-                  </Text>
-                </ProjectLink>
               </Text>
+              <ProjectLink id={"mathworks"}>
+                <Text fontSize={{ base: "md", md: "lg" }} color="#5CA4FF">
+                  Find out more! &rarr;
+                </Text>
+              </ProjectLink>
             </Box>
             <Box mt={4}>
               <Text fontWeight="bold" fontSize="2xl" color="white">

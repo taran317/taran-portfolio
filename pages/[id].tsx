@@ -1,6 +1,4 @@
 import Markdown from "markdown-to-jsx";
-import fs from "fs";
-import path from "path";
 import { GetStaticPaths, GetStaticProps } from "next";
 import dateFormat from "dateformat";
 import { Avatar, Heading, Stack, Text } from "@chakra-ui/react";
@@ -101,10 +99,8 @@ const ProjectPost: React.FC<ProjectProps> = ({
 
 export const getStaticPaths: GetStaticPaths = async () => {
   // Fetch the IDs of the available posts
-  const postsDirectory = path.join(process.cwd(), "posts");
-  const postFilenames = fs.readdirSync(postsDirectory);
-  const paths = postFilenames.map((filename) => ({
-    params: { id: filename.replace(/\.md$/, "") },
+  const paths = Object.keys(projectInfo).map((id) => ({
+    params: { id },
   }));
 
   return {
