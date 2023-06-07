@@ -8,7 +8,6 @@ import Credit from "../components/Credit";
 import Navbar from "../components/Navbar";
 import ProjectProps from "../types/ProjectProps";
 import projectInfo from "../posts/projectInfo";
-import ChakraImage from "../components/ChakraImage";
 import readingTime from "reading-time";
 import { useEffect, useState } from "react";
 

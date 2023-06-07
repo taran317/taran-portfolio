@@ -1,7 +1,6 @@
 import { Text, Box, Heading, Image } from "@chakra-ui/react";
 import React from "react";
 import dateFormat from "dateformat";
-import ChakraImage from "../ChakraImage";
 import ProjectLink from "./ProjectLink";
 import Tags from "./Tags";
 
