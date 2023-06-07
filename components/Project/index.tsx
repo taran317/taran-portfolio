@@ -1,7 +1,7 @@
 import { Text, Box, Heading, Image } from "@chakra-ui/react";
 import React from "react";
 import dateFormat from "dateformat";
-import ChakraNextImage from "../ChakraImage";
+import ChakraImage from "../ChakraImage";
 import ProjectLink from "./ProjectLink";
 import Tags from "./Tags";
 
@@ -74,13 +74,13 @@ const Project: React.FC<ProjectProps> = ({
             marginLeft={{ base: "0", md: "5%" }}
             marginTop="5%"
           >
-            <ChakraNextImage
+            <Image
               src={imageUrl}
-              alt="Abstract image interpretation of the project title"
-              objectFit="cover"
-              w="100%"
-              h="200px"
-              layout="fill"
+              position="relative"
+              zIndex={2}
+              fallbackSrc="https://via.placeholder.com/150"
+              borderRadius="15px"
+              alt="Taran Anantasagar"
             />
           </Box>
           <Box zIndex="1" width="100%" position="absolute" height="100%">

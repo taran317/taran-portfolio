@@ -67,7 +67,7 @@ const Education = () => {
           >
             <Box>
               <Text fontWeight="bold" fontSize="2xl" color="white">
-                SWE Intern @ Mathworks (MATLAB) 🎲
+                SWE Intern @ MathWorks (MATLAB) 🎲
               </Text>
               <Box height="10px" />
               <Text

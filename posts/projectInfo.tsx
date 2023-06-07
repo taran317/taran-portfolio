@@ -9,7 +9,8 @@ const projectInfo: { [key: string]: ProjectProps } = {
     date: "2021-01-01",
     description:
       "A web app that allows users to search for and learn about the effects of various chemicals on the human body.",
-    imageUrl: "/images/exposurepedia.png",
+    imageUrl:
+      "https://post.healthline.com/wp-content/uploads/2021/03/therapist-and-patient-exposure-therapy-technique-1200x628-facebook.jpg",
     tags: [
       "React",
       "TypeScript",
@@ -27,7 +28,7 @@ const projectInfo: { [key: string]: ProjectProps } = {
     date: "2021-01-01",
     description:
       "A web app that allows users to search for and learn about the effects of various chemicals on the human body.",
-    imageUrl: "/images/exposurepedia.png",
+    imageUrl: "https://i.ibb.co/GTxHdt7/membrane.png",
     tags: [
       "React",
       "TypeScript",
@@ -39,13 +40,50 @@ const projectInfo: { [key: string]: ProjectProps } = {
     ],
     github: "https://github.com/hack4impact-upenn/exposurepedia",
   },
-  exposurepedia3: {
-    id: "exposurepedia3",
-    title: "Exposurepedia",
+  ripple: {
+    id: "ripple",
+    title: "Ripple Interactive",
     date: "2021-01-01",
     description:
       "A web app that allows users to search for and learn about the effects of various chemicals on the human body.",
-    imageUrl: "/images/exposurepedia.png",
+    imageUrl:
+      "https://i.ibb.co/M8sFWxS/Screen-Shot-2023-06-07-at-3-24-02-PM.png",
+    tags: [
+      "React",
+      "TypeScript",
+      "Node.js",
+      "Express",
+      "PostgreSQL",
+      "Docker",
+      "AWS",
+    ],
+    github: "https://github.com/hack4impact-upenn/exposurepedia",
+  },
+  "sports-betting": {
+    id: "sports-betting",
+    title: "Sports Betting",
+    date: "2021-01-01",
+    description:
+      "A web app that allows users to search for and learn about the effects of various chemicals on the human body.",
+    imageUrl: "https://www.gaming.net/wp-content/uploads/2022/02/nba-bet.jpg",
+    tags: [
+      "React",
+      "TypeScript",
+      "Node.js",
+      "Express",
+      "PostgreSQL",
+      "Docker",
+      "AWS",
+    ],
+    github: "https://github.com/hack4impact-upenn/exposurepedia",
+  },
+  pennos: {
+    id: "pennos",
+    title: "PennOS",
+    date: "2021-01-01",
+    description:
+      "A web app that allows users to search for and learn about the effects of various chemicals on the human body.",
+    imageUrl: "https://i.ibb.co/HK9zWfM/pennos.png",
     tags: [
       "React",
       "TypeScript",

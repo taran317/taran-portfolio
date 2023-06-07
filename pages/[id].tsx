@@ -1,7 +1,7 @@
 import Markdown from "markdown-to-jsx";
 import { GetStaticPaths, GetStaticProps } from "next";
 import dateFormat from "dateformat";
-import { Avatar, Heading, Stack, Text } from "@chakra-ui/react";
+import { Avatar, Heading, Stack, Text, Image } from "@chakra-ui/react";
 import PostStyle from "../styles/PostStyle";
 import MarkdownOptions from "../components/MarkdownOptions";
 import Credit from "../components/Credit";
@@ -77,7 +77,7 @@ const ProjectPost: React.FC<ProjectProps> = ({
           </Stack>
 
           <Stack borderRadius="10px" minH="200px">
-            <ChakraImage
+            <Image
               src={imageUrl}
               borderRadius="10px"
               w="100%"

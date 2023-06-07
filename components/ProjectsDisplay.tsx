@@ -30,13 +30,10 @@ const ProjectsDisplay: React.FC<ProjectsDisplayProps> = ({ projects }) => {
           })}
         </SimpleGrid>
 
-        <NextLink href="/projects">
-          <Link>
-            <Text textAlign="center" fontSize="2xl">
-              Explore more &rarr;
-            </Text>
-          </Link>
-        </NextLink>
+        
+        <Text textAlign="center" fontSize="2xl">
+            Explore more &rarr;
+        </Text>
       </Stack>
     </>
   );
