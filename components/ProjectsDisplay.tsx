@@ -29,11 +29,6 @@ const ProjectsDisplay: React.FC<ProjectsDisplayProps> = ({ projects }) => {
             );
           })}
         </SimpleGrid>
-
-        
-        <Text textAlign="center" fontSize="2xl">
-            Explore more &rarr;
-        </Text>
       </Stack>
     </>
   );
