@@ -81,31 +81,39 @@ const About = () => {
             </Text>
           </Box>
         </Stack>
-        <Stack spacing={4}>
-          <Flex justifyContent="center" position="relative" mt="20">
+        <Stack align="center" spacing={4}>
+          {/* <Heading fontSize="5xl" color="black" >.</Heading> */}
+          <Box height="64px" />
+          <Flex
+            alignItems="center"
+            height="100%"
+            justifyContent="center"
+            position="relative"
+          >
             <Box
-              maxW={{ base: "300px", lg: "350px" }}
-              maxH={{ base: "300px", lg: "350px" }}
+              maxW={{ base: "350px", lg: "400px" }}
+              maxH={{ base: "350px", lg: "400px" }}
+              position="relative"
             >
               <Image
                 src="https://svgsilh.com/svg/26432.svg"
                 filter="invert(0.1)"
-                zIndex={3}
                 position="absolute"
-                top={0}
-                right={0}
+                top={-8}
+                right={-12}
+                zIndex={0}
                 w={{ base: "100px", lg: "150px" }}
                 alt=""
               />
               <Image
-                src={
-                  "https://media.licdn.com/dms/image/D4E03AQEXyfRD89xH9g/profile-displayphoto-shrink_800_800/0/1686103834116?e=1691625600&v=beta&t=k-6HWJlJl0bU08vGdRxVjSaaOeAtEyWVjguUAA2w5T4"
-                }
+                src="https://media.licdn.com/dms/image/D4E03AQEXyfRD89xH9g/profile-displayphoto-shrink_800_800/0/1686103834116?e=1691625600&v=beta&t=k-6HWJlJl0bU08vGdRxVjSaaOeAtEyWVjguUAA2w5T4"
+                position="relative"
+                zIndex={2}
                 fallbackSrc="https://via.placeholder.com/150"
-                w={{ base: "300px", lg: "350px" }}
-                h={{ base: "300px", lg: "350px" }}
+                w={{ base: "350px", lg: "400px" }}
+                h={{ base: "350px", lg: "400px" }}
                 borderRadius="50px"
-                alt={"Taran Anantasagar"}
+                alt="Taran Anantasagar"
               />
             </Box>
           </Flex>

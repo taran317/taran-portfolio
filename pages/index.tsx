@@ -27,7 +27,6 @@ const Home: NextPage = () => (
 				<Box height="50px" />
 				<About />
 				<Education />
-				<Education />
 			</Stack>
 		</Flex>
 		<Credit />

@@ -35,7 +35,6 @@ const Navbar = () => {
 					{!isLargerThan768 ? (
 						<Box color="textSecondary">
 							<NavbarItem href="/">Home</NavbarItem>
-							<NavbarItem href="/projects">Projects</NavbarItem>
 						</Box>
 					) : (
 						<Icon as={AiOutlineMenu} w={7} h={7} onClick={onOpen} />

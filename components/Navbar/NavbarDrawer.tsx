@@ -40,11 +40,6 @@ const NavbarDrawer: React.FC<NavbarDrawerProps> = ({ isOpen, onClose }) => {
 									Home
 								</Button>
 							</NextLink>
-							<NextLink href="/projects" passHref>
-								<Button as="a" variant="ghost" fontSize="16px">
-									Projects
-								</Button>
-							</NextLink>
 						</Stack>
 					</DrawerBody>
 				</DrawerContent>
