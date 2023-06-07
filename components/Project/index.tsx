@@ -1,20 +1,26 @@
-import { Text, Box } from "@chakra-ui/react";
+import { Text, Box, Heading } from "@chakra-ui/react";
 import React from "react";
-
 import dateFormat from "dateformat";
-import { ProjectOverviewItem } from "../../api/types";
 import ChakraNextImage from "../ChakraImage";
+import ProjectLink from "./ProjectLink";
+import Tags from "./Tags";
 
-type ProjectProps = ProjectOverviewItem & {
+type ProjectProps = {
+  id: string;
+  title: string;
+  tags: string[];
   imageUrl: string;
-  index?: number | undefined;
+  shortDescription: string;
+  created: Date;
 };
 
 const Project: React.FC<ProjectProps> = ({
+  id,
+  title,
+  tags,
   imageUrl,
   shortDescription,
   created,
-  index = 0,
 }) => {
 
   return (
@@ -25,7 +31,6 @@ const Project: React.FC<ProjectProps> = ({
         display="flex"
         flexDirection={{
           base: "column",
-          md: index % 2 === 0 ? "row" : "row-reverse",
         }}
         justifyContent="space-between"
       >
@@ -67,7 +72,10 @@ const Project: React.FC<ProjectProps> = ({
           justifyContent="center"
           marginTop={{ base: "3", md: "0" }}
         >
-
+          <Tags tags={tags} />
+          <ProjectLink id={id}>
+            <Heading marginTop="2">{title}</Heading>
+          </ProjectLink>
           <Text fontSize="md" color="gray.400">
             {dateFormat(created, "mmmm d, yyyy")}
           </Text>
@@ -81,7 +89,6 @@ const Project: React.FC<ProjectProps> = ({
           >
             {shortDescription}
           </Text>
-
         </Box>
       </Box>
     </>

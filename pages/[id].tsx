@@ -3,7 +3,7 @@ import path from "path";
 import Markdown from "markdown-to-jsx";
 import { GetStaticPaths, GetStaticProps } from "next";
 import dateFormat from "dateformat";
-import { Heading, Stack, Text } from "@chakra-ui/react";
+import { Avatar, Heading, Stack, Text } from "@chakra-ui/react";
 import PostStyle from "../styles/PostStyle";
 import MarkdownOptions from "../components/MarkdownOptions";
 import Credit from "../components/Credit";
@@ -71,12 +71,11 @@ const ProjectPost: React.FC<ProjectPostProps> = ({ post }) => {
             justifyContent="space-between"
           >
             <Stack isInline alignItems="center">
-              {/* <Avatar
-                name={personalInfo.name}
+              <Avatar
                 size="xs"
-                src={personalInfo.profilePictureUrl}
+                src={"https://i.ibb.co/qdk0kqM/linkd.jpg"}
                 border="1px solid textPrimary"
-              /> */}
+              />
               <Text fontSize={["xs", "xs", "sm", "sm"]} color="textPrimary">
                 Taran Anantasagar &bull; {dateFormat(date, "mmmm d, yyyy")}
               </Text>

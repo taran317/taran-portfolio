@@ -4,13 +4,9 @@ import {
   Stack,
   Heading,
   Box,
-  List,
-  ListIcon,
-  ListItem,
 } from "@chakra-ui/react";
-import { ArrowRightIcon } from "@chakra-ui/icons";
 import React from "react";
-import ProjectLink from "./ProjectLink";
+import ProjectLink from "./Project/ProjectLink";
 
 const Education = () => {
   return (
