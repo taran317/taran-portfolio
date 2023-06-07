@@ -1,6 +1,6 @@
+import Markdown from "markdown-to-jsx";
 import fs from "fs";
 import path from "path";
-import Markdown from "markdown-to-jsx";
 import { GetStaticPaths, GetStaticProps } from "next";
 import dateFormat from "dateformat";
 import { Avatar, Heading, Stack, Text } from "@chakra-ui/react";
@@ -8,49 +8,20 @@ import PostStyle from "../styles/PostStyle";
 import MarkdownOptions from "../components/MarkdownOptions";
 import Credit from "../components/Credit";
 import Navbar from "../components/Navbar";
+import ProjectProps from "../types/ProjectProps";
+import projectInfo from "../posts/projectInfo";
 import ChakraImage from "../components/ChakraImage";
 import readingTime from "reading-time";
 
-interface ProjectInfo {
-  title: string;
-  date: string;
-  description: string;
-  imageUrl: string;
-  tags: string[];
-  github: string;
-  content: string;
-}
-
-interface ProjectPostProps {
-    post: ProjectInfo;
-}
-
-const projectInfo: { [key: string]: ProjectInfo } = {
-  exposurepedia: {
-    title: "Exposurepedia",
-    date: "2021-01-01",
-    description:
-      "A web app that allows users to search for and learn about the effects of various chemicals on the human body.",
-    imageUrl: "/images/exposurepedia.png",
-    tags: [
-      "React",
-      "TypeScript",
-      "Node.js",
-      "Express",
-      "PostgreSQL",
-      "Docker",
-      "AWS",
-    ],
-    github: "https://github.com/hack4impact-upenn/exposurepedia",
-    content: fs.readFileSync(
-      path.join(process.cwd(), "posts", "exposurepedia.md"),
-      "utf8"
-    ),
-  },
-};
-
-const ProjectPost: React.FC<ProjectPostProps> = ({ post }) => {
-  const { title, date, description, imageUrl, tags, github, content } = post;
+const ProjectPost: React.FC<ProjectProps> = ({
+  title,
+  date,
+  description,
+  imageUrl,
+  tags,
+  github,
+  content,
+}) => {
   return (
     <>
       <Navbar />
@@ -122,7 +93,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   };
 };
 
-export const getStaticProps: GetStaticProps<ProjectPostProps> = async ({
+export const getStaticProps: GetStaticProps<ProjectProps> = async ({
   params,
 }) => {
   if (!params || !params.id) {
@@ -143,7 +114,7 @@ export const getStaticProps: GetStaticProps<ProjectPostProps> = async ({
 
   return {
     props: {
-      post,
+      ...post,
     },
   };
 };
