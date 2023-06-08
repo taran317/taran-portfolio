@@ -4,7 +4,7 @@ const projectInfo: { [key: string]: ProjectProps } = {
   exposurepedia: {
     id: "exposurepedia",
     title: "Exposurepedia",
-    date: "2021-01-01",
+    date: "2023-05-29",
     description:
       "A web app that allows users to search for and learn about the effects of various chemicals on the human body.",
     imageUrl:
@@ -22,7 +22,7 @@ const projectInfo: { [key: string]: ProjectProps } = {
   mathworks: {
     id: "mathworks",
     title: "MathWorks (current)",
-    date: "2021-01-01",
+    date: "2023-06-07",
     description:
       "A web app that allows users to search for and learn about the effects of various chemicals on the human body.",
     imageUrl: "https://i.ibb.co/GTxHdt7/membrane.png",
@@ -32,7 +32,7 @@ const projectInfo: { [key: string]: ProjectProps } = {
   ripple: {
     id: "ripple",
     title: "Ripple Interactive",
-    date: "2021-01-01",
+    date: "2022-09-16",
     description:
       "A web app that allows users to search for and learn about the effects of various chemicals on the human body.",
     imageUrl:
@@ -43,7 +43,7 @@ const projectInfo: { [key: string]: ProjectProps } = {
   "sports-betting": {
     id: "sports-betting",
     title: "Sports Betting",
-    date: "2021-01-01",
+    date: "2023-05-11",
     description:
       "A web app that allows users to search for and learn about the effects of various chemicals on the human body.",
     imageUrl: "https://www.gaming.net/wp-content/uploads/2022/02/nba-bet.jpg",
@@ -53,7 +53,7 @@ const projectInfo: { [key: string]: ProjectProps } = {
   pennos: {
     id: "pennos",
     title: "PennOS",
-    date: "2021-01-01",
+    date: "2023-05-18",
     description:
       "A web app that allows users to search for and learn about the effects of various chemicals on the human body.",
     imageUrl: "https://i.ibb.co/HK9zWfM/pennos.png",
