@@ -24,7 +24,7 @@ const projectInfo: { [key: string]: ProjectProps } = {
   },
   mathworks: {
     id: "mathworks",
-    title: "MathWorks",
+    title: "MathWorks (in progress)",
     date: "2021-01-01",
     description:
       "A web app that allows users to search for and learn about the effects of various chemicals on the human body.",

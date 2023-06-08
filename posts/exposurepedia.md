@@ -25,13 +25,15 @@ Before we started building, we spent countless hours designing the application o
 
 ![Figma Design](/images/figma.png)
 
-I managed 8 talented Hack4Impact developers to build the application. We used the MERN stack (MongoDB, Express, React, Node) and [Material-UI](https://material-ui.com/) for the frontend design, building on top of the Hack4Impact [boilerplate](https://github.com/hack4impact-upenn/boilerplate-s2022). The boilerplate, which I helped develop in Spring 2022, handles authentication, database connections, and other boilerplate code that is common to most web applications.
+I managed 8 talented Hack4Impact developers to build the application, and I developed as well. We used the MERN stack (MongoDB, Express, React, Node) and [Material-UI](https://material-ui.com/) for the frontend design, building on top of the Hack4Impact [boilerplate](https://github.com/hack4impact-upenn/boilerplate-s2022). The boilerplate, which I helped develop in Spring 2022, handles authentication, database connections, and other boilerplate code that is common to most web applications.
 
 ### Filter & Search
 
 ![Filter & Search](/images/filter.png)
 
-The most
+The most important feature of the application is the ability to precisely filter and search for exposure therapies.
+
+We implemented this feature using a combination of MongoDB queries and React hooks. We used MongoDB queries to filter by disorder, and we used React hooks to filter by exposure type, exposure hierarchy, and exposure therapy name.
 
 ### Submit New Exposure Therapy
 
