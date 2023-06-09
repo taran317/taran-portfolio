@@ -1,0 +1,11 @@
+In my current summer internship (Summer 2023) at MathWorks, I have the amazing opportunity to develop their powerful suite of mathematical computing tools. MATLAB and Simulink, their flagship products, are widely recognized and extensively used in academia and industry, with applications spanning diverse fields such as NASA missions, computational biology, and self-driving cars.
+
+Simulink, a robust modeling tool that can be launched from within MATLAB, provides a graphical environment for designing and simulating dynamic systems using blocks and connectors. Within Simulink, the Verification and Validation products play a critical role in ensuring the correctness and reliability of systems. These products offer a range of tools including model checking, requirement validation, and formal verification, enabling engineers to validate their designs thoroughly.
+
+During my internship, my specific focus is on the [Simulink Temporal Assessments](https://www.mathworks.com/help/sltest/ug/temporal-assessments.html) feature, a relatively new addition that enables users to specify temporal properties of their models and verify them using Simulink's built-in tools. Temporal properties describe the behavior of systems over time, and [metric temporal logic](https://en.wikipedia.org/wiki/Metric_temporal_logic) provides a formal specification framework using operators like "since," "eventually," and "until." By leveraging established results from temporal logic, we can utilize a model checker to verify these properties and ensure system correctness.
+
+During the initial weeks of my internship, my focus has been on enhancing the Simulink Temporal Assessments feature by adding support for Enumerations. This improvement allows users to define named values, expanding the expressiveness of their test suites. **This enhancement will be included in the upcoming MATLAB R2024a release!**
+
+My experience so far working with MATLAB/Simulink exposed me to a massive codebase and the surprising challenges of managing version control in a complex software ecosystem. It's been fascinating to see the rigorous testing procedures required for code submission due to the significance of MATLAB/Simulink in critical applications.
+
+This is just the start of my internship, and I'm excited to see what the next two months have in store!

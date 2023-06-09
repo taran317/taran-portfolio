@@ -13,7 +13,7 @@ On the backend, I used Django to build the API endpoints for the feature. Postgr
 Ensuring a smooth and responsive user experience was a key aspect of building the _What's Happening_ feature. As the number of users and posts increased, the performance and scalability of the system became critical. I conducted thorough performance optimizations, including efficient data fetching and caching strategies. By optimizing database queries and implementing pagination techniques, I was able to maintain fast loading times and a seamless scrolling experience, even with a large volume of content in the feed.
 
 ![What's Happening](https://i.ibb.co/5KCcN3J/demo.png)
-<imgcaption> <center> Ripple Preview </center> </imgcaption>
+<imgcaption> <center> _What's Happening_ Features </center> </imgcaption>
 
 ### Addressing Privacy Concerns
 
@@ -25,4 +25,4 @@ After pitching my idea directly to the CEO, I developed an MVP for the feature. 
 
 ### Result + Reflection
 
-The months of dedicated work in a Silicon Valley garage culminated in the successful launch of the features I'd developed for Ripple's iOS app in August 2022. Being part of a small team at Ripple meant I had to wear many hats and shoulder various responsibilities, involving myself in every step of the development process. From ideation to UI design to backend implementation, I helped bring the app to life. And since it was my first time working on a mobile app, I learned a lot of new technologies and gained many skills along the way.
+The months of dedicated work in a Silicon Valley garage culminated in the successful launch of the features I'd developed for Ripple's iOS app in August 2022. Being part of a small team at Ripple meant I had to wear many hats and shoulder various responsibilities, involving myself in every step of the development process. From ideation to UI design to backend implementation, I helped bring the app to life. And since it was my first time working on a mobile app, I learned a lot of new technologies along the way.
