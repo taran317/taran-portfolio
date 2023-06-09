@@ -39,9 +39,9 @@ We implemented this feature using a combination of MongoDB queries and React hoo
 
 ### Hierarchies
 
-### Miscellaneous
+### Miscellaneous Features
 
-- Bulk uploads
+- Bulk exposure item uploads
 - Manage approved clinicians
 - Approve new exposure therapies
 - Modifications page
@@ -55,4 +55,4 @@ We implemented this feature using a combination of MongoDB queries and React hoo
 
 ## The Result
 
-The application is currently live at [exposurepedia.org](https://exposurepedia.org/). It is currently being adopted by clinicians across the world, and we are so excited to see how it will be used in the future!
+The application is currently live at [https://exposurepedia.herokuapp.com/](https://exposurepedia.herokuapp.com/), but only licensed clinicians are able to access the full application. It is currently being adopted by clinicians across the world (as a free resource), and we are so excited to see how it will be used in the future!

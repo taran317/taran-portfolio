@@ -7,8 +7,7 @@ const projectInfo: { [key: string]: ProjectProps } = {
     date: "2023-05-29",
     description:
       "A web app that allows users to search for and learn about the effects of various chemicals on the human body.",
-    imageUrl:
-      "https://post.healthline.com/wp-content/uploads/2021/03/therapist-and-patient-exposure-therapy-technique-1200x628-facebook.jpg",
+    imageUrl: "https://images2.imgbox.com/d8/ce/JUuAq44r_o.png",
     tags: [
       "MongoDB",
       "Node.js",
@@ -46,7 +45,7 @@ const projectInfo: { [key: string]: ProjectProps } = {
     date: "2023-05-11",
     description:
       "A web app that allows users to search for and learn about the effects of various chemicals on the human body.",
-    imageUrl: "https://www.gaming.net/wp-content/uploads/2022/02/nba-bet.jpg",
+    imageUrl: "https://images2.imgbox.com/1c/cb/MXbDvsAc_o.png",
     tags: ["MySQL (AWS RDS)", "Node.js", "Express", "React", "Chakra UI"],
     github: "https://github.com/hack4impact-upenn/exposurepedia",
   },
@@ -56,10 +55,8 @@ const projectInfo: { [key: string]: ProjectProps } = {
     date: "2023-05-18",
     description:
       "A web app that allows users to search for and learn about the effects of various chemicals on the human body.",
-    imageUrl: "https://i.ibb.co/HK9zWfM/pennos.png",
-    tags: [
-        "C",
-    ],
+    imageUrl: "https://images2.imgbox.com/e4/75/aieXmTkD_o.png",
+    tags: ["C"],
     github: "https://github.com/hack4impact-upenn/exposurepedia",
   },
 };
