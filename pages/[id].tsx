@@ -1,7 +1,15 @@
 import Markdown from "markdown-to-jsx";
 import { GetStaticPaths, GetStaticProps } from "next";
 import dateFormat from "dateformat";
-import { Avatar, Heading, Stack, Text, Image, Spacer, Box } from "@chakra-ui/react";
+import {
+  Avatar,
+  Heading,
+  Stack,
+  Text,
+  Image,
+  Spacer,
+  Box,
+} from "@chakra-ui/react";
 import PostStyle from "../styles/PostStyle";
 import MarkdownOptions from "../components/MarkdownOptions";
 import Credit from "../components/Credit";
@@ -12,17 +20,17 @@ import readingTime from "reading-time";
 import { useEffect, useState } from "react";
 
 const fetchContent = async (id: string) => {
-    const response = await fetch(
-      `https://raw.githubusercontent.com/taran317/posts/main/${id}.md`
-    );
-    if (response.ok) {
-      const text = await response.text();
-      return text;
-    } else {
-      console.error("Failed to fetch content");
-      return '';
-    }
-}
+  const response = await fetch(
+    `https://raw.githubusercontent.com/taran317/posts/main/${id}.md`
+  );
+  if (response.ok) {
+    const text = await response.text();
+    return text;
+  } else {
+    console.error("Failed to fetch content");
+    return "";
+  }
+};
 
 const ProjectPost: React.FC<ProjectProps> = ({
   id,
@@ -31,14 +39,14 @@ const ProjectPost: React.FC<ProjectProps> = ({
   imageUrl,
   github,
 }) => {
-  const [content, setContent] = useState<string>('');
+  const [content, setContent] = useState<string>("");
 
   useEffect(() => {
     fetchContent(id).then((text) => {
       setContent(text);
     });
   }, [id]);
-  
+
   return (
     <>
       <Navbar />
