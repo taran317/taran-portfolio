@@ -116,8 +116,8 @@ Note that the ?'s are placeholders for parameters that are passed in from the fr
 
 Our primary approach to optimization involved restructuring queries by utilizing temporary tables and optimizing selections and projections. We focused on improving the efficiency of computation-intensive queries and retrieving data indexed by the primary key. Creating indexes did not yield significant improvements in query response times for our specific use case. And in terms of caching, this was a bit challenging as it seems that MySQL’s query caching seems to be [deprecated](https://dev.mysql.com/doc/refman/5.7/en/query-cache.html).
 
-![Complex Query Optimization](https://images2.imgbox.com/05/3c/lnhzNAVF_o.png)
-<imgcaption><center>Complex Query Optimization</center><imgcaption>
+<img src="https://images2.imgbox.com/05/3c/lnhzNAVF_o.png" alt="Complex Query Optimization" border="0" width="100%" height="100%" />
+<em><center>Complex Query Optimization</center></em>
 
 _Note that since the 22-second top scoring matchups query is static, we created an auxiliary table to store the results of the query and retrieve the results from the table instead of running the query every time. This further reduced the query response time to under a second, making it practical to run on every page load._
 
