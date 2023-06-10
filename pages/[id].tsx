@@ -7,8 +7,10 @@ import {
   Stack,
   Text,
   Image,
-  Spacer,
   Box,
+  Link,
+  Icon,
+  useMediaQuery,
 } from "@chakra-ui/react";
 import PostStyle from "../styles/PostStyle";
 import MarkdownOptions from "../components/MarkdownOptions";
@@ -17,6 +19,7 @@ import Navbar from "../components/Navbar";
 import ProjectProps from "../types/ProjectProps";
 import projectInfo from "../posts/projectInfo";
 import readingTime from "reading-time";
+import { FaGithub } from "react-icons/fa";
 import { useEffect, useState } from "react";
 
 const fetchContent = async (id: string) => {
@@ -40,6 +43,7 @@ const ProjectPost: React.FC<ProjectProps> = ({
   github,
 }) => {
   const [content, setContent] = useState<string>("");
+  const [isLargerThan800] = useMediaQuery("800");
 
   useEffect(() => {
     fetchContent(id).then((text) => {
@@ -63,7 +67,7 @@ const ProjectPost: React.FC<ProjectProps> = ({
           <Stack
             py={4}
             direction={{ base: "column", md: "row" }}
-            alignItems="baseline"
+            alignItems="center"
             justifyContent="space-between"
           >
             <Stack isInline alignItems="center">
@@ -73,11 +77,32 @@ const ProjectPost: React.FC<ProjectProps> = ({
                 border="1px solid textPrimary"
               />
               <Text fontSize={["xs", "xs", "sm", "sm"]} color="textPrimary">
-                Taran Anantasagar &bull; {dateFormat(date, "mmmm d, yyyy")}
+                Taran Anantasagar &bull; {dateFormat(date, "mmmm d, yyyy")}{" "}
+                {github && <Text as="span"> &bull; </Text>}
               </Text>
+              {github && (
+                <Box
+                  display="flex"
+                  alignItems="center"
+                  top="3px"
+                  position="relative"
+                >
+                  <Link
+                    href={github}
+                    isExternal
+                    fontSize={["lg", "lg", "xl", "xl"]}
+                    color="textPrimary"
+                  >
+                    <Icon as={FaGithub} />
+                  </Link>
+                </Box>
+              )}
             </Stack>
-            <Stack>
-              <Text fontSize={["xs", "xs", "sm", "sm"]} color="textSecondary">
+            <Stack align="center" justify="center" isInline>
+              <Text
+                fontSize={["xs", "xs", "sm", "sm"]}
+                color="textSecondary"
+              >
                 {readingTime(content).text}
               </Text>
             </Stack>
