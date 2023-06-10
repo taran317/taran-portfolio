@@ -10,7 +10,7 @@ import {
   Box,
   Link,
   Icon,
-  useMediaQuery,
+  Spinner,
 } from "@chakra-ui/react";
 import PostStyle from "../styles/PostStyle";
 import MarkdownOptions from "../components/MarkdownOptions";
@@ -43,7 +43,6 @@ const ProjectPost: React.FC<ProjectProps> = ({
   github,
 }) => {
   const [content, setContent] = useState<string>("");
-  const [isLargerThan800] = useMediaQuery("800");
 
   useEffect(() => {
     fetchContent(id).then((text) => {
@@ -99,10 +98,7 @@ const ProjectPost: React.FC<ProjectProps> = ({
               )}
             </Stack>
             <Stack align="center" justify="center" isInline>
-              <Text
-                fontSize={["xs", "xs", "sm", "sm"]}
-                color="textSecondary"
-              >
+              <Text fontSize={["xs", "xs", "sm", "sm"]} color="textSecondary">
                 {readingTime(content).text}
               </Text>
             </Stack>
@@ -119,9 +115,20 @@ const ProjectPost: React.FC<ProjectProps> = ({
               alt=""
             />
           </Stack>
-          <PostStyle>
-            <Markdown options={MarkdownOptions}>{content}</Markdown>
-          </PostStyle>
+          {content ? (
+            <PostStyle>
+              <Markdown options={MarkdownOptions}>{content}</Markdown>
+            </PostStyle>
+          ) : (
+            <Box
+              display="flex"
+              justifyContent="center"
+              alignItems="center"
+              height="100%"
+            >
+              <Spinner size="xl" />
+            </Box>
+          )}
         </Stack>
       </Stack>
       <Box height="125px" />

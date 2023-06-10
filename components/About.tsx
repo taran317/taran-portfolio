@@ -24,7 +24,7 @@ const About = () => {
         <Stack spacing={4}>
           <Heading fontSize="5xl">About Me</Heading>
           <Box
-            bg="brand.1000"
+            bg="#322659"
             p={4}
             borderRadius="md"
             boxShadow="md"

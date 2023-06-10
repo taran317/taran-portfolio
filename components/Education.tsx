@@ -75,8 +75,12 @@ const Education = () => {
                 color="white"
                 mt={2}
               >
-                Simulink Assessments Team
+                As part of the MATLAB/Simulink Core Assessments team, I am
+                working on enhancing Mathworks's Verification and Validation
+                suite by extending the capabilities of Simulink's temporal
+                assessment framework.
               </Text>
+              <Box height="10px" />
               <ProjectLink id={"mathworks"}>
                 <Text fontSize={{ base: "md", md: "lg" }} color="#5CA4FF">
                   Find out more! &rarr;
@@ -92,8 +96,15 @@ const Education = () => {
                 color="white"
                 mt={2}
               >
-                Building app
+                Built and shipped{" "}
+                <Text as="span" fontStyle="italic">
+                  What's Happening
+                </Text>{" "}
+                social media feed feature for Ripple's app (iOS) and addressed
+                privacy concerns by allowing users to use Ripple without
+                enabling location services.
               </Text>
+              <Box height="10px" />
               <ProjectLink id={"ripple"}>
                 <Text fontSize={{ base: "md", md: "lg" }} color="#5CA4FF">
                   Find out more! &rarr;
