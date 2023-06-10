@@ -12,8 +12,10 @@ On the backend, I used Django to build the API endpoints for the feature. Postgr
 
 Ensuring a smooth and responsive user experience was a key aspect of building the _What's Happening_ feature. As the number of users and posts increased, the performance and scalability of the system became critical. I conducted thorough performance optimizations, including efficient data fetching and caching strategies. By optimizing database queries and implementing pagination techniques, I was able to maintain fast loading times and a seamless scrolling experience, even with a large volume of content in the feed.
 
+<br />
 <img src="https://i.ibb.co/5KCcN3J/demo.png" alt="What's Happening Features" border="0" width="100%" height="100%" />
 <em> <center> <i> What's Happening </i> Features </center> </em>
+<br />
 
 ### Addressing Privacy Concerns
 

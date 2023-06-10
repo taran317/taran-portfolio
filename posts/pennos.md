@@ -2,13 +2,14 @@ When I finished PennOS, the final project in my graduate Operating Systems class
 
 PennOS is a UNIX-like operating system that my team and I built from scratch in C. It includes a priority scheduler, FAT file system, and a shell with job control and input redirection. Due to unforeseen circumstances, our team size unexpectedly reduced from the standard 5 members to just 3. As a result, each of us assumed significant responsibilities for key components of the operating system. I took charge of developing the kernel, which involved creating essential elements such as the priority scheduler, a comprehensive suite of kernel functions, and an API for a user to interact with our OS (e.g., `waitpid()` and `kill()`). I also integrated the kernel with the FAT file system and shell, which involved writing a lot of glue code, as well as debugging and testing. Beyond what was required for the project, we added a few additional fun features and made sure our program had no memory leaks or invalid reads and writes using Valgrind.
 
-<img src="https://images2.imgbox.com/c3/ea/iHE2LYdr_o.png" alt="Potentially the greatest feeling in the world" border="0" width="100%" height="100%" />
+<br />
+<img src="https://images2.imgbox.com/da/6b/XvJBwRJb_o.png" alt="Possibly the greatest feeling in the world" border="0" width="100%" height="100%" />
 <em> <center> <i> Possibly the greatest feeling in the world </i> </center> </em>
 <br>
 
 In accordance with UPenn's policies, I can't share any source code or delve into implementation details. But I'll discuss some of important lessons I learned regarding complex projects and teamwork. And if you're interested in hearing more, check out [this paper](https://netdb.cis.upenn.edu/papers/pennos.pdf) written about PennOS or feel free to reach out to me at <tars@seas.upenn.edu>!
 
-### How Much To Plan?
+### How Much Tod Plan?
 
 Typically, I'm the kind of person who dives right into a project or problem, ready to start coding or prototyping immediately. This approach has served me well, especially for smaller projects where quick solutions are often feasible with some research and tinkering.
 

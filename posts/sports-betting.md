@@ -8,8 +8,10 @@ Secondly, we wanted to enhance the user experience by incorporating trivia facts
 
 Finally, we aimed to serve as an entry point into the world of sports analytics, particularly in the context of sports betting. We wanted to demystify the complexities surrounding sports betting by offering users a platform where they could explore and comprehend various aspects of this domain. Through interactive analytics and comprehensive data comparisons, users could navigate the intricacies of sports betting and make educated decisions.
 
+<br />
 <img src="https://images2.imgbox.com/00/e1/JmWUoLnU_o.png" alt="Preview" border="0" width="100%" height="100%" />
 <em><center>Preview</center></em>
+<br />
 
 ## Data Process
 
@@ -17,10 +19,12 @@ The data process involves collecting, cleaning, and organizing data from various
 
 The Sports Betting Analytics database was designed to adhere to the Third Normal Form (3NF) for data integrity and efficiency. This involved removing redundant columns and moving auxiliary player and team information to separate tables. By standardizing IDs and eliminating dependencies, the database maintains a streamlined structure for consistent and optimized data querying and analysis.
 
+<br />
 <img src="https://images2.imgbox.com/ba/a6/b9E6pyfR_o.png" alt="Database Tables" border="0" width="100%" height="100%" />
 <em>
 <center>Database Tables</center>
 </em>
+<br />
 
 ### Data Cleaning
 
@@ -32,6 +36,7 @@ To streamline the datasets, we focused on reducing redundancy and ensuring data 
 
 Entity resolution was a crucial step in improving the data quality for the Sports Betting Analytics app. We standardized team names and IDs, linked related data using unique identifiers, and resolved player ambiguities using additional information like birthdays, jersey numbers, and team affiliations. We also standardized date formats, addressed missing or inconsistent data, and removed duplicates. These efforts enhanced the reliability of the data for accurate analysis and insights.
 
+<br />
 <img src="https://images2.imgbox.com/79/0d/p39m4Ygi_o.png" alt="Entity Resolution" border="0" width="100%" height="100%" />
 <em>
 <center>Entity Resolution</center>
@@ -116,14 +121,18 @@ Note that the ?'s are placeholders for parameters that are passed in from the fr
 
 Our primary approach to optimization involved restructuring queries by utilizing temporary tables and optimizing selections and projections. We focused on improving the efficiency of computation-intensive queries and retrieving data indexed by the primary key. Creating indexes did not yield significant improvements in query response times for our specific use case. And in terms of caching, this was a bit challenging as it seems that MySQL’s query caching seems to be [deprecated](https://dev.mysql.com/doc/refman/5.7/en/query-cache.html).
 
+<br />
 <img src="https://images2.imgbox.com/05/3c/lnhzNAVF_o.png" alt="Complex Query Optimization" border="0" width="100%" height="100%" />
 <em><center>Complex Query Optimization</center></em>
+<br />
 
 _Note that since the 22-second top scoring matchups query is static, we created an auxiliary table to store the results of the query and retrieve the results from the table instead of running the query every time. This further reduced the query response time to under a second, making it practical to run on every page load._
 
 ## Demo
 
+<br />
 ![Click to view demo](/images/sports-betting-demo.gif)
 <em><center>Click to view demo</center></em>
+<br />
 
 Note that the app is no longer live on Heroku and the database has been shut down due to costs. However, you can still view the demo above and check out the code on [GitHub](https://github.com/taran317/sports-betting).

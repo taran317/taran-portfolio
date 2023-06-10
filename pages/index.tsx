@@ -25,7 +25,7 @@ const Home: NextPage = () => (
 				px={{ base: "5vw", md: "10vw" }}
 				mt={{ base: "15vh", md: "22.5vh" }}
 			>
-				<Header />
+					<Header />
 				<Box height="50px" />
 				<About />
 				<Education />

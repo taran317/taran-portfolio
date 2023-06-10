@@ -86,11 +86,11 @@ const ProjectPost: React.FC<ProjectProps> = ({
           <Stack borderRadius="10px" minH="200px">
             <Image
               src={imageUrl}
-              borderRadius="10px"
+              borderRadius="50px"
               w="100%"
               h="400px"
               mx="auto"
-              objectFit="cover"
+              objectFit="contain"
               alt=""
             />
           </Stack>

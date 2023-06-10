@@ -8,7 +8,12 @@ Exposure therapy is a very effective treatment for anxiety disorders with years 
 
 Rachel tried to address this problem by creating a spreadsheet of exposure therapies along with a Wordpress website which displayed exposure therapies.
 
-![Wordpress Site](/images/exposurepedia.png)
+<br />
+
+<img src="https://images2.imgbox.com/eb/8a/MLlQIXYO_o.png" alt="Wordpress Site" border="0" width="100%" height="100%" />
+<em><center>Wordpress Site</center></em>
+
+<br />
 
 However, this solution was not ideal:
 
@@ -23,35 +28,75 @@ Along with my friends Ziya Xu and Katherine Wang in Hack4Impact, we decided to b
 
 Before we started building, we spent countless hours designing the application on Figma—it was imperative that we got the user experience right. We iterated on the design many times, reaching out to Rachel for feedback, who in turn reached out to clinicians to get their feedback. We ended up with a design that was both intuitive and functional.
 
-![Figma Design](/images/figma.png)
+<br />
+
+<img src="https://images2.imgbox.com/11/0e/qIbIAfud_o.png" alt="Figma Design" border="0" width="100%" height="100%" />
+<center><em>First design </em>🤮</center>
+
+<br />
+<br />
+
+<img src="https://images2.imgbox.com/ef/eb/1uC7WAdq_o.png" alt="Figma Design" border="0" width="100%" height="100%" />
+<center><em>Final design </em>😍</center>
+
+<br />
 
 I managed 8 talented Hack4Impact developers to build the application, and I developed as well. We used the MERN stack (MongoDB, Express, React, Node) and [Material-UI](https://material-ui.com/) for the frontend design, building on top of the Hack4Impact [boilerplate](https://github.com/hack4impact-upenn/boilerplate-s2022). The boilerplate, which I helped develop in Spring 2022, handles authentication, database connections, and other boilerplate code that is common to most web applications.
 
 ### Filter & Search
 
-![Filter & Search](/images/filter.png)
+<br />
+<img src="https://images2.imgbox.com/d8/7e/bkO7xXda_o.png" alt="Filter & Search" border="0" width="100%" height="100%" />
+<em><center>Filter, search, & add to hierarchy/hierarchies</center></em>
+<br>
 
-The most important feature of the application is the ability to precisely filter and search for exposure therapies.
+The most important feature of the application is the ability to precisely filter and search for exposure therapies. Clinicians can filter by a variety of criteria, including exposure title, disorder, format, intervention type, keywords, and more. They can also sort on any column. The search, filter, and sort functionality is implemented with MongoDB's aggregation pipeline, which allows us to perform complex queries on the database.
 
-We implemented this feature using a combination of MongoDB queries and React hooks. We used MongoDB queries to filter by disorder, and we used React hooks to filter by exposure type, exposure hierarchy, and exposure therapy name.
-
-### Submit New Exposure Therapy
+Given the complex nested structure of disorder categories, we faced some unique challenges in implementing the Exposurepedia page. For example, managing tags for selected disorder categories turned out to be more complex than expected due to a lot of edge cases. For example, selecting a disorder shouldn't display all subcategories, but deselecting a subdisorder should also deselect the parent disorder and show the remaining subdisorders. The reverse should also hold true. To solve this, we traverse relevant parts of the disorder graph with BFS when a disorder is selected or deselected, enabling dynamic updates of the tags. [Prof. Rajiv Gandhi](https://directory.seas.upenn.edu/rajiv-gandhi/) would be so proud!
 
 ### Hierarchies
 
+A hierarchy is a collection of exposure therapies that are grouped together. It provides clinicians with a structured way to organize and manage exposure therapies for their patients. Clinicians can create hierarchies and add exposure therapies to them.
+
+For example, a clinician might create a hierarchy called "Fear of Dogs" and add exposure therapies that involve petting dogs. They can then use this hierarchy to track the progress of their patients who are afraid of dogs.
+
+Clinicians can then assign SUDS (Subjective Units of Distress Scale) scores to each exposure item in a hierarchy, and then sort by SUDS score. SUDS scores are a measure of how much distress a patient feels when they are exposed to their fear. This allows clinicians to track the progress of their patients over time. Hierarchies can then be exported to .csv files, so clinicians can use them in the way that they're used to.
+
+<br />
+<img src="https://images2.imgbox.com/7a/aa/D3YrqHVD_o.png" alt="Example hierarchy" border="0" width="100%" height="100%" />
+<em><center>Example hierarchy</center></em>
+<br>
+
+### Submit New Exposure Therapy
+
+Clinicians can submit new exposure therapies to Exposurepedia. They can also submit new disorders and subdisorders. This is a very important feature, as it allows clinicians to share their exposure therapies with other clinicians. This is a huge improvement over the Wordpress site, where clinicians had to email Rachel their exposure therapies, who would then manually add them to the Wordpress site.
+
+Again, handling the many cases when submitting a new resource required a bit of creativity.
+
+<br />
+
+<img src="https://images2.imgbox.com/ee/ef/tuXW6FKm_o.png" alt="Submit new resource page" border="0" width="100%" height="100%" />
+<em><center>Submit new resource page</center></em>
+<br>
+
 ### Miscellaneous Features
 
+Besides the main features, we also implemented a number of other features, including:
+
+- Authentication (handled by H4I boilerplate)
+- Exposure page, which displays a single exposure item which users could like and admin could edit
 - Bulk exposure item uploads
 - Manage approved clinicians
 - Approve new exposure therapies
-- Modifications page
-- Contact page (Sendgrid)
+- Modifications page, which suggests possible modifications to exposure therapies
+- Contact page (SendGrid)
 
-![Bulk Upload](/images/bulk.png)
+<br />
 
-### Deployment
+<img src="https://images2.imgbox.com/78/b5/NHCtyk6T_o.png" alt="Manage clinicians" border="0" width="100%" height="100%" />
+<em><center>Add exposure items in bulk from .csv + manage clinicians page</center></em>
 
-## Challenges
+<br />
 
 ## The Result
 
