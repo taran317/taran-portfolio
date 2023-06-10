@@ -186,8 +186,8 @@ function Header() {
             letterSpacing="-1.6px"
             maxWidth={{ base: "100%", md: "800px" }}
           >
-            Let's build something extraordinary together.
-            But first, a bit about me
+            Let's build something extraordinary together. But first, a bit about
+            me
             <Box color="displayColor" as="span">
               ...welcome to my portfolio!
             </Box>{" "}
@@ -216,12 +216,11 @@ function Header() {
             🏀 Following favorite teams and players across sports leagues +
             engaging in fiery debates with friends
             <br />
-            🧑‍💻 Actively seeking Software Engineering internships for Summer
-            2024
+            🧑‍💻 Actively seeking Software Engineering internships for Summer 2024
           </Text>
         </SlideFade>
 
-        {/* <SlideFade
+        <SlideFade
           dir="top"
           in
           transition={{ enter: { duration: 0.4, delay: 1.0 } }}
@@ -244,7 +243,7 @@ function Header() {
             </Box>
             <Box>
               <Link href={`mailto:tars@seas.upenn.edu`} isExternal>
-                {/* <Button
+                <Button
                   leftIcon={<Icon as={FaEnvelope} color="brand.300" />}
                   transition="0.3s"
                   position="static"
@@ -252,11 +251,11 @@ function Header() {
                   color="white"
                 >
                   Email
-                </Button> 
+                </Button>
               </Link>
             </Box>
           </Wrap>
-        </SlideFade> */}
+        </SlideFade>
       </Stack>
     </>
   );
