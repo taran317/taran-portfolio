@@ -8,30 +8,25 @@ interface ProjectsDisplayProps {
     projects: ProjectProps[];
 }
 
-const ProjectsDisplay: React.FC<ProjectsDisplayProps> = ({ projects }) => {
-  return (
-    <>
-      <Stack spacing={8} w="full">
-        <Heading fontSize="5xl">Projects</Heading>
-        <SimpleGrid columns={{ sm: 1, md: 2 }} spacing={16}>
-          {projects?.map((project, index) => {
-            return (
-              <Project
-                key={index}
-                index={index}
-                id={project.id}
-                title={project.title}
-                tags={project.tags}
-                imageUrl={project.imageUrl}
-                description={project.description}
-                date={project.date}
-              />
-            );
-          })}
-        </SimpleGrid>
-      </Stack>
-    </>
-  );
-};
+const ProjectsDisplay: React.FC<ProjectsDisplayProps> = ({ projects }) => (
+  <>
+    <Stack spacing={8} w="full">
+      <Heading fontSize="5xl">Projects</Heading>
+      <SimpleGrid columns={{ sm: 1, md: 2 }} spacing={16}>
+        {projects?.map((project, index) => (
+          <Project
+            key={index}
+            index={index}
+            id={project.id}
+            title={project.title}
+            tags={project.tags}
+            imageUrl={project.imageUrl}
+            description={project.description}
+            date={project.date} />
+        ))}
+      </SimpleGrid>
+    </Stack>
+  </>
+);
 
 export default ProjectsDisplay;

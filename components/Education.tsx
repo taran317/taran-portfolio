@@ -26,10 +26,6 @@ const Education = () => (
             <Text fontSize="md" fontStyle="italic" color="white">
               School of Engineering and Applied Science
             </Text>
-            {/* <Text fontSize="md" fontStyle="italic" color="white">
-          Philadelphia, PA
-        </Text> */}
-            {/* divider line */}
             <Box
               mt={3}
               mb={3}
@@ -39,7 +35,6 @@ const Education = () => (
               opacity="0.2"
               borderRadius="full"
             />
-            {/* <Box height="10px" /> */}
             <Flex>
               <Box>
                 <Box>
@@ -68,8 +63,6 @@ const Education = () => (
                     <ListItem>
                       <Text
                         fontSize={{ base: "14px", md: "18px" }}
-                        // fontStyle="italic"
-                        // fontWeight="bold"
                         color="white"
                         mt={2}
                       >

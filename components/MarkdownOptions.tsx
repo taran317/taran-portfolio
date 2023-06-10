@@ -44,7 +44,7 @@ const DocsHeading = (props: any) => (
   <Heading
     css={{
       scrollMarginTop: "100px",
-      scrollSnapMargin: "100px", // Safari
+      scrollSnapMargin: "100px",
       "&[id]": {
         pointerEvents: "none",
       },
