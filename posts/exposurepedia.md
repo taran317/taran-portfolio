@@ -1,6 +1,6 @@
 Exposurepedia is the first-ever encyclopedia for exposure therapies, and it is currently being adopted as a valuable tool by clinicians around the world. It is a project I've spent a year working on as Technical Lead @ [Hack4Impact](https://hack4impact.org/) at the University of Pennsylvania. In short, Hack4Impact is a student organization that builds software for non-profits.
 
-Exposure therapies are a type of cognitive behavioral therapy that help people overcome their fears. For example, if someone is afraid of dogs, they might be asked to pet a dog. At a high level, the idea is that the more you are exposed to your fear, the less afraid you will be (there is a rich body of research focused on understanding the [mechanisms for why exposure therapy works](https://www.sciencedirect.com/science/article/pii/S0272735804001187?casa_token=-DEh9tyl8eYAAAAA:qbuCJSOhPh1atTl831SrhJdf2kZs64_32u_T5NyRcJRSmv1ysItdtBqwnCd7uMy1bcvd0B9vclNX)).
+Exposure therapy is a type of cognitive behavioral therapy that helps people overcome their fears. For example, if someone is afraid of dogs, they might be asked to pet a dog. At a high level, the idea is that the more you are exposed to your fear, the less afraid you will be (there is a rich body of research focused on understanding the [mechanisms for why exposure therapy works](https://www.sciencedirect.com/science/article/pii/S0272735804001187?casa_token=-DEh9tyl8eYAAAAA:qbuCJSOhPh1atTl831SrhJdf2kZs64_32u_T5NyRcJRSmv1ysItdtBqwnCd7uMy1bcvd0B9vclNX)).
 
 [Rachel Schwartz, Ph.D.](https://www.med.upenn.edu/ctsa/Rachel_Schwartz.html), a postdoctoral fellow at the Center for the Treatment and Study of Anxiety (CTSA) at the University of Pennsylvania, reached out to us and shared her experience as a clinical psychologist and research fellow who does exposure therapy on her patients. She explained the pain points she and other clinicians face when trying to find and share exposure therapies.
 
@@ -20,13 +20,13 @@ However, this solution was not ideal:
 - The Wordpress site was not at all user-friendly
 - Searching for disorders did not return relevant exposure therapies
 - Adding new exposure therapies required a lot of manual work and technical knowledge
-- nested disorders categories were not supported (i.e. OCD -> Existential -> Fear of Wasting Time)
+- Nested disorders categories were not supported (i.e. OCD -> Existential -> Fear of Wasting Time)
 
 ## The Solution
 
 Along with my friends Ziya Xu and Katherine Wang in Hack4Impact, we decided to build a web application that would address these pain points.
 
-Before we started building, we spent countless hours designing the application on Figma—it was imperative that we got the user experience right. We iterated on the design many times, reaching out to Rachel for feedback, who in turn reached out to clinicians to get their feedback. We ended up with a design that was both intuitive and functional.
+We invested significant time in the design phase, using Figma to construct an optimal user experience. Iterating on the design through multiple cycles, constantly seeking feedback from Rachel, who in turn reached out to clinicians for their valuable input. We ended up with a design that was both intuitive and functional.
 
 <br />
 
@@ -60,7 +60,7 @@ A hierarchy is a collection of exposure therapies that are grouped together. It 
 
 For example, a clinician might create a hierarchy called "Fear of Dogs" and add exposure therapies that involve petting dogs. They can then use this hierarchy to track the progress of their patients who are afraid of dogs.
 
-Clinicians can then assign SUDS (Subjective Units of Distress Scale) scores to each exposure item in a hierarchy, and then sort by SUDS score. SUDS scores are a measure of how much distress a patient feels when they are exposed to their fear. This allows clinicians to track the progress of their patients over time. Hierarchies can then be exported to .csv files, so clinicians can use them in the way that they're used to.
+Clinicians can then assign SUDS (Subjective Units of Distress Scale) scores to each exposure item in a hierarchy, and then sort by SUDS score. SUDS scores are a measure of how much distress a patient feels when they are exposed to their fear. This allows clinicians to track the progress of their patients over time. Hierarchies can then be exported to .csv files, so clinicians can maintain them in Excel, the way most are used to.
 
 <br />
 <img src="https://images2.imgbox.com/7a/aa/D3YrqHVD_o.png" alt="Example hierarchy" border="0" width="100%" height="100%" />
@@ -69,7 +69,7 @@ Clinicians can then assign SUDS (Subjective Units of Distress Scale) scores to e
 
 ### Submit New Exposure Therapy
 
-Clinicians can submit new exposure therapies to Exposurepedia. They can also submit new disorders and subdisorders. This is a very important feature, as it allows clinicians to share their exposure therapies with other clinicians. This is a huge improvement over the Wordpress site, where clinicians had to email Rachel their exposure therapies, who would then manually add them to the Wordpress site.
+Clinicians have the ability to submit new exposure therapies, disorders, and subdisorders directly to Exposurepedia. This is a very important feature, as it allows clinicians to share their exposure therapies with other clinicians. This streamlined process is a major upgrade from the previous workflow on the Wordpress site, where clinicians had to email Rachel their therapies for manual addition.
 
 Again, handling the many cases when submitting a new resource required a bit of creativity.
 
@@ -84,7 +84,7 @@ Again, handling the many cases when submitting a new resource required a bit of 
 Besides the main features, we also implemented a number of other features, including:
 
 - Authentication (handled by H4I boilerplate)
-- Exposure page, which displays a single exposure item which users could like and admin could edit
+- Exposure page, which displays the details of a single exposure item, which users could like and admin could edit
 - Bulk exposure item uploads
 - Manage approved clinicians
 - Approve new exposure therapies
