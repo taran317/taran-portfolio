@@ -1,8 +1,8 @@
-Exposurepedia is the first-ever encyclopedia for exposure therapies, and it is currently being adopted as a valuable tool by clinicians across the world. It is a project I've spent a year working on as Technical Lead @ [Hack4Impact](https://hack4impact.org/) at the University of Pennsylvania. In short, Hack4Impact is a student organization that builds software for non-profits.
-
-[Rachel Schwartz, Ph.D.](https://www.med.upenn.edu/ctsa/Rachel_Schwartz.html), a postdoctoral fellow at the Center for the Treatment and Study of Anxiety (CTSA) at the University of Pennsylvania, reached out to us and shared her experience as a clinical psychologist and research fellow. She explained the pain points she and other clinicians face when trying to find and share exposure therapies.
+Exposurepedia is the first-ever encyclopedia for exposure therapies, and it is currently being adopted as a valuable tool by clinicians around the world. It is a project I've spent a year working on as Technical Lead @ [Hack4Impact](https://hack4impact.org/) at the University of Pennsylvania. In short, Hack4Impact is a student organization that builds software for non-profits.
 
 Exposure therapies are a type of cognitive behavioral therapy that help people overcome their fears. For example, if someone is afraid of dogs, they might be asked to pet a dog. At a high level, the idea is that the more you are exposed to your fear, the less afraid you will be (there is a rich body of research focused on understanding the [mechanisms for why exposure therapy works](https://www.sciencedirect.com/science/article/pii/S0272735804001187?casa_token=-DEh9tyl8eYAAAAA:qbuCJSOhPh1atTl831SrhJdf2kZs64_32u_T5NyRcJRSmv1ysItdtBqwnCd7uMy1bcvd0B9vclNX)).
+
+[Rachel Schwartz, Ph.D.](https://www.med.upenn.edu/ctsa/Rachel_Schwartz.html), a postdoctoral fellow at the Center for the Treatment and Study of Anxiety (CTSA) at the University of Pennsylvania, reached out to us and shared her experience as a clinical psychologist and research fellow who does exposure therapy on her patients. She explained the pain points she and other clinicians face when trying to find and share exposure therapies.
 
 Exposure therapy is a very effective treatment for anxiety disorders with years of robust research supporting its efficacy. However, exposure therapies are extremely underutilized in clinical practice. One reason for this is that clinicians often have to spend hours searching for exposure therapies, and that they often have to create their own exposure therapies from scratch. They also often have to share their exposure therapies with other clinicians, but this process is very time-consuming and inefficient.
 
@@ -100,4 +100,4 @@ Besides the main features, we also implemented a number of other features, inclu
 
 ## The Result
 
-The application is currently live at [https://exposurepedia.herokuapp.com/](https://exposurepedia.herokuapp.com/), but only licensed clinicians are able to access the full application. It is currently being adopted by clinicians across the world (as a free resource), and we are so excited to see how it will be used in the future!
+The application is currently live at [https://exposurepedia.herokuapp.com/](https://exposurepedia.herokuapp.com/), but only licensed clinicians are able to access the full application. It is currently being adopted by clinicians around the world (as a free resource), and we are so excited to see how it will be used in the future!

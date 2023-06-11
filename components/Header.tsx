@@ -15,7 +15,7 @@ import {
   WrapItem,
 } from "@chakra-ui/react";
 import { motion, isValidMotionProp } from "framer-motion";
-import { FaEnvelope, FaGithub, FaLinkedin, FaFile } from "react-icons/fa";
+import { FaEnvelope, FaGithub, FaLinkedin, FaFile, FaGit } from "react-icons/fa";
 import { useState } from "react";
 
 export const MotionBox = motion(
@@ -251,6 +251,19 @@ function Header() {
                   color="white"
                 >
                   Email
+                </Button>
+              </Link>
+            </Box>
+            <Box>
+              <Link href={"https://github.com/taran317"} isExternal>
+                <Button
+                  leftIcon={<Icon as={FaGithub} color="brand.300" />}
+                  transition="0.3s"
+                  position="static"
+                  size={isLargerThan800 ? "md" : "sm"}
+                  color="white"
+                >
+                  Github
                 </Button>
               </Link>
             </Box>
