@@ -24,7 +24,7 @@ import { useEffect, useState } from "react";
 
 const fetchContent = async (id: string) => {
   const response = await fetch(
-    `https://raw.githubusercontent.com/taran317/posts/main/${id}.md`
+    `https://raw.githubusercontent.com/taran317/taran-portfolio/main/posts/${id}.md`
   );
   if (response.ok) {
     const text = await response.text();

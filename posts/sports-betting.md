@@ -51,7 +51,7 @@ For this project, I really wanted to try using Chakra UI (the same library used 
 
 Here is an example of a complex query that I wrote to find how often each player has covered the spread in their games over the course of their career sorted in descending order of spread success percentage. The query is a bit long, but it's a good example of how to use CTEs to simplify complex queries. Before optimizing this query, it took about 9 seconds to run. After several optimizations, it takes about 0.7 seconds to run.
 
-```sql
+<!-- ```sql
 WITH total_games AS (
     SELECT P.player_id, COUNT(*) AS total_games
     FROM player_stats P
@@ -88,11 +88,16 @@ JOIN spread_covers1 S1 ON TG.player_id = S1.player_id
 JOIN spread_covers2 S2 ON TG.player_id = S2.player_id
 JOIN players P ON TG.player_id = P.person_id
 ORDER BY spread_percentage DESC;
-```
+``` -->
+
+<br />
+<img src="https://i.ibb.co/C5rt0RK/Screen-Shot-2023-06-12-at-1-36-01-AM.png" alt="" border="0" width="100%" height="100%" />
+<br>
+<br />
 
 Here's another interesting query which finds arbitrage opportunities in the historical betting data. Arbitrage betting is when odds line up between two different books on the same game such that you can guarantee a profit by betting a certain amount on one provider and a certain amount on the other provider. The arbitrage percentage is a measure of how drastic the difference in odds are. An opportunity is profitable only if the arbitrage percentage is less than 100%.
 
-```sql
+<!-- ```sql
 SELECT
     B1.book_name AS book1,
     B2.book_name AS book2,
@@ -113,7 +118,11 @@ ORDER BY
     arbitrage_percentage
 LIMIT ?
 OFFSET ?;
-```
+``` -->
+
+<br />
+<img src="https://i.ibb.co/4Y2QbWP/Screen-Shot-2023-06-12-at-1-36-41-AM.png" alt="" border="0" width="100%" height="100%" />
+<br>
 
 Note that the ?'s are placeholders for parameters that are passed in from the frontend. The LIMIT and OFFSET parameters are used for pagination.
 
