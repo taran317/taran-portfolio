@@ -90,9 +90,7 @@ JOIN players P ON TG.player_id = P.person_id
 ORDER BY spread_percentage DESC;
 ``` -->
 
-<br />
 <img src="https://i.ibb.co/C5rt0RK/Screen-Shot-2023-06-12-at-1-36-01-AM.png" alt="" border="0" width="100%" height="100%" />
-<br>
 <br />
 
 Here's another interesting query which finds arbitrage opportunities in the historical betting data. Arbitrage betting is when odds line up between two different books on the same game such that you can guarantee a profit by betting a certain amount on one provider and a certain amount on the other provider. The arbitrage percentage is a measure of how drastic the difference in odds are. An opportunity is profitable only if the arbitrage percentage is less than 100%.
@@ -120,9 +118,7 @@ LIMIT ?
 OFFSET ?;
 ``` -->
 
-<br />
 <img src="https://i.ibb.co/4Y2QbWP/Screen-Shot-2023-06-12-at-1-36-41-AM.png" alt="" border="0" width="100%" height="100%" />
-<br>
 
 Note that the ?'s are placeholders for parameters that are passed in from the frontend. The LIMIT and OFFSET parameters are used for pagination.
 
@@ -130,10 +126,8 @@ Note that the ?'s are placeholders for parameters that are passed in from the fr
 
 Our primary approach to optimization involved restructuring queries by utilizing temporary tables and optimizing selections and projections. We focused on improving the efficiency of computation-intensive queries and retrieving data indexed by the primary key. Creating indexes did not yield significant improvements in query response times for our specific use case. And in terms of caching, this was a bit challenging as it seems that MySQL’s query caching seems to be [deprecated](https://dev.mysql.com/doc/refman/5.7/en/query-cache.html).
 
-<br />
 <img src="https://images2.imgbox.com/05/3c/lnhzNAVF_o.png" alt="Complex Query Optimization" border="0" width="100%" height="100%" />
 <em><center>Complex Query Optimization</center></em>
-<br />
 
 _Note that since the 22-second top scoring matchups query is static, we created an auxiliary table to store the results of the query and retrieve the results from the table instead of running the query every time. This further reduced the query response time to under a second, making it practical to run on every page load._
 
