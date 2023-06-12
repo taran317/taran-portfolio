@@ -1,4 +1,4 @@
-Sports betting is a form of betting that involves wagering on the outcome of, well, sports. According to the Pew Research Center, 19% of U.S. adults say they have bet money on sports in the past year. It's a big deal.
+Sports betting is a multi-billion dollar industry in the United States, and the NBA is one of the most popular sports to bet on. In 2022, sports betting gross revenue hit a record $7.5 billion globally, a nearly 75% increase from 2021. The NFL is the most popular sport to bet on in the United States, but the NBA is a close second.
 
 In Spring 2023, I took CIS 5500 (Databases & Information Systems) at Penn. As someone who loves sports and data-driven decision-making, I thought it would be fun to build a platform to explore sports betting data related to the NBA as my final project. So I teamed up with a couple friends and we built [Sports Betting Analytics](https://github.com/taran317/sports-betting).
 
@@ -39,7 +39,7 @@ Entity resolution was a crucial step in improving the data quality for the Sport
 <br />
 <img src="https://images2.imgbox.com/79/0d/p39m4Ygi_o.png" alt="Entity Resolution" border="0" width="100%" height="100%" />
 <em>
-<center>Entity Resolution</center>
+<center>Entity Resolution Diagram</center>
 </em>
 <br>
 
@@ -128,11 +128,6 @@ Our primary approach to optimization involved restructuring queries by utilizing
 
 _Note that since the 22-second top scoring matchups query is static, we created an auxiliary table to store the results of the query and retrieve the results from the table instead of running the query every time. This further reduced the query response time to under a second, making it practical to run on every page load._
 
-## Demo
+## Result
 
-<br />
-![Click to view demo](/images/sports-betting-demo.gif)
-<em><center>Click to view demo</center></em>
-<br />
-
-Note that the app is no longer live on Heroku and the database has been shut down due to costs. However, you can still view the demo above and check out the code on [GitHub](https://github.com/taran317/sports-betting).
+Note that the app is no longer live on Heroku and the database has been shut down due to costs. Demo coming soon, but for now you can check out the code on [GitHub](https://github.com/taran317/sports-betting).

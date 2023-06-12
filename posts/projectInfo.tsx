@@ -7,7 +7,7 @@ const projectInfo: { [key: string]: ProjectProps } = {
     date: "2023-05-29",
     description:
       "An encyclopedia of exposure therapies that streamlines the process of researching and sharing exposure therapies.",
-    imageUrl: "https://images2.imgbox.com/d8/ce/JUuAq44r_o.png",
+    imageUrl: "https://i.ibb.co/k0JQ5dk/JUu-Aq44r-o-min-1.png",
     tags: [
       "MongoDB",
       "Node.js",
@@ -45,7 +45,7 @@ const projectInfo: { [key: string]: ProjectProps } = {
     date: "2023-05-11",
     description:
       "A resource that aims to provide users with access to comprehensive NBA statistics for teams, players, and games, enabling them to gain valuable insights and make informed decisions for sports betting.",
-    imageUrl: "https://images2.imgbox.com/1c/cb/MXbDvsAc_o.png",
+    imageUrl: "https://i.ibb.co/NT4HPXS/nba-bet.jpg",
     tags: ["MySQL (AWS RDS)", "Node.js", "Express", "React", "Chakra UI"],
     github: "https://github.com/taran317/sports-betting",
   },
