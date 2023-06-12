@@ -88,6 +88,7 @@ ORDER BY spread_percentage DESC;
 ``` -->
 
 <br />
+<br />
 <img src="https://i.ibb.co/C5rt0RK/Screen-Shot-2023-06-12-at-1-36-01-AM.png" alt="" border="0" width="100%" height="100%" />
 
 Here's another interesting query which finds arbitrage opportunities in the historical betting data. Arbitrage betting is when odds line up between two different books on the same game such that you can guarantee a profit by betting a certain amount on one provider and a certain amount on the other provider. The arbitrage percentage is a measure of how drastic the difference in odds are. An opportunity is profitable only if the arbitrage percentage is less than 100%.
@@ -115,6 +116,7 @@ LIMIT ?
 OFFSET ?;
 ``` -->
 
+<br />
 <br />
 <img src="https://i.ibb.co/4Y2QbWP/Screen-Shot-2023-06-12-at-1-36-41-AM.png" alt="" border="0" width="100%" height="100%" />
 

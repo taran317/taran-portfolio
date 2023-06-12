@@ -31,6 +31,8 @@ We invested significant time in the design phase, using Figma to construct an op
 <img src="https://images2.imgbox.com/11/0e/qIbIAfud_o.png" alt="Figma Design" border="0" width="100%" height="100%" />
 <center><em>First design </em>🤮</center>
 
+<br />
+
 <img src="https://images2.imgbox.com/ef/eb/1uC7WAdq_o.png" alt="Figma Design" border="0" width="100%" height="100%" />
 <center><em>Final design </em>😍</center>
 
