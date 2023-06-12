@@ -5,7 +5,6 @@ PennOS is a UNIX-like operating system that my team and I built from scratch in 
 <br />
 <img src="https://images2.imgbox.com/da/6b/XvJBwRJb_o.png" alt="Possibly the greatest feeling in the world" border="0" width="100%" height="100%" />
 <em> <center> <i> Possibly the greatest feeling in the world </i> </center> </em>
-<br>
 
 In accordance with UPenn's policies, I can't share any source code or delve into implementation details. But I'll discuss an important takeaway I learned from this project: the value of planning and designing a complex system before diving into implementation. And if you're interested in hearing more, check out [this paper](https://netdb.cis.upenn.edu/papers/pennos.pdf) written about PennOS or feel free to reach out to me at <tars@seas.upenn.edu>!
 

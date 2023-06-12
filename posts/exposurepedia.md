@@ -13,8 +13,6 @@ Rachel tried to address this problem by creating a spreadsheet of exposure thera
 <img src="https://images2.imgbox.com/eb/8a/MLlQIXYO_o.png" alt="Wordpress Site" border="0" width="100%" height="100%" />
 <em><center>Wordpress Site</center></em>
 
-<br />
-
 However, this solution was not ideal:
 
 - The Wordpress site was not at all user-friendly
@@ -33,13 +31,8 @@ We invested significant time in the design phase, using Figma to construct an op
 <img src="https://images2.imgbox.com/11/0e/qIbIAfud_o.png" alt="Figma Design" border="0" width="100%" height="100%" />
 <center><em>First design </em>🤮</center>
 
-<br />
-<br />
-
 <img src="https://images2.imgbox.com/ef/eb/1uC7WAdq_o.png" alt="Figma Design" border="0" width="100%" height="100%" />
 <center><em>Final design </em>😍</center>
-
-<br />
 
 I managed 8 talented Hack4Impact developers to build the application, and I developed as well. We used the MERN stack (MongoDB, Express, React, Node) and [Material-UI](https://material-ui.com/) for the frontend design, building on top of the Hack4Impact [boilerplate](https://github.com/hack4impact-upenn/boilerplate-s2022). The boilerplate, which I helped develop in Spring 2022, handles authentication, database connections, and other boilerplate code that is common to most web applications.
 
@@ -48,7 +41,6 @@ I managed 8 talented Hack4Impact developers to build the application, and I deve
 <br />
 <img src="https://images2.imgbox.com/d8/7e/bkO7xXda_o.png" alt="Filter & Search" border="0" width="100%" height="100%" />
 <em><center>Filter, search, & add to hierarchy/hierarchies</center></em>
-<br>
 
 The most important feature of the application is the ability to precisely filter and search for exposure therapies. Clinicians can filter by a variety of criteria, including exposure title, disorder, format, intervention type, keywords, and more. They can also sort on any column. The search, filter, and sort functionality is implemented with MongoDB's aggregation pipeline, which allows us to perform complex queries on the database.
 
@@ -65,7 +57,6 @@ Clinicians can then assign SUDS (Subjective Units of Distress Scale) scores to e
 <br />
 <img src="https://images2.imgbox.com/7a/aa/D3YrqHVD_o.png" alt="Example hierarchy" border="0" width="100%" height="100%" />
 <em><center>Example hierarchy</center></em>
-<br>
 
 ### Submit New Exposure Therapy
 
@@ -77,7 +68,6 @@ Again, handling the many cases when submitting a new resource required a bit of 
 
 <img src="https://images2.imgbox.com/ee/ef/tuXW6FKm_o.png" alt="Submit new resource page" border="0" width="100%" height="100%" />
 <em><center>Submit new resource page</center></em>
-<br>
 
 ### Miscellaneous Features
 
@@ -95,8 +85,6 @@ Besides the main features, we also implemented a number of other features, inclu
 
 <img src="https://images2.imgbox.com/78/b5/NHCtyk6T_o.png" alt="Manage clinicians" border="0" width="100%" height="100%" />
 <em><center>Add exposure items in bulk from .csv + manage clinicians page</center></em>
-
-<br />
 
 ## The Result
 

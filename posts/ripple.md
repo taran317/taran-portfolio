@@ -13,7 +13,6 @@ Ensuring a smooth and responsive user experience was a key aspect of building th
 <br />
 <img src="https://i.ibb.co/5KCcN3J/demo.png" alt="What's Happening Features" border="0" width="100%" height="100%" />
 <em> <center> <i> What's Happening </i> Features </center> </em>
-<br />
 
 ### Addressing Privacy Concerns
 
