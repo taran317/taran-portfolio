@@ -216,7 +216,7 @@ function Header() {
             🏀 Following favorite teams and players across sports leagues +
             engaging in fiery debates with friends
             <br />
-            🧑‍💻 Actively seeking software engineering and quant trading internships for Summer 2024
+            🧑‍💻 Actively seeking software engineering internships for Summer 2024
           </Text>
         </SlideFade>
 

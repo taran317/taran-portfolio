@@ -34,7 +34,7 @@ const About = () => (
             the University of Pennsylvania pursuing BSE and MSE degrees in
             Computer Science, with minors in Mathematics and Statistics. I'm
             passionate about building products that make a difference in
-            people's lives, and I'm currently looking for software engineering and quant trading
+            people's lives, and I'm currently looking for software engineering
             internships for Summer 2024.
             <br />
             <br />
