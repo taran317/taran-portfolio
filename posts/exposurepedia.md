@@ -90,4 +90,4 @@ Besides the main features, we also implemented a number of other features, inclu
 
 ## The Result
 
-The application is currently live at [https://exposurepedia.herokuapp.com/](https://exposurepedia.herokuapp.com/), but only licensed clinicians are able to access the full application. It is currently being adopted by clinicians around the world (as a free resource), and we are so excited to see how it will be used in the future!
+The application is currently live at [https://www.exposurepedia.com/](https://www.exposurepedia.com/), but only licensed clinicians are able to access the full application. It is currently being adopted by clinicians around the world (as a free resource), and we are so excited to see how it will be used in the future!
